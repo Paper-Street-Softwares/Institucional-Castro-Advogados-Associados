@@ -166,56 +166,13 @@ const content = {
           técnico para gerar soluções viáveis.
         </p>
       ),
-      heroDefaultImage: heroDefaultImg, // img da pessoa mobile
-      heroDefaulMobiletImg: heroDefaultMobileImg,
       heroBg: bgHero,
-
       alt: "Imagem ilustrativa da Seção Início",
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
-      ctaButtonText: <>Entre em contato</>,
+      ctaButtonText: <>A_Definir</>,
       ctaButtonTextSecondary: <>A_Definir</>,
-      obsHero: {
-        icon: <> {/* ⚠️ */}</>,
-        iconTwo: <></>,
-        text: <>A_Definir</>,
-        textTwo: <>A_Definir</>,
-      },
       secondaryCta: "Contato",
-    },
-    emergency: {
-      miniTag: <>A_Definir</>,
-      title: <h1>A_Definir</h1>,
-      subtitle: (
-        <div>
-          <p className="mb-6 font-secondFont">A_Definir</p>
-        </div>
-      ),
-      ctaButtonText: <>A_Definir</>,
-    },
-    important: {
-      miniTag: <>A_Definir</>,
-      title: <>A_Definir</>,
-      cards: {
-        card1: {
-          title: <>A_Definir</>,
-          paragraph: <>A_Definir</>,
-        },
-        card2: {
-          title: <>A_Definir</>,
-          paragraph: <>A_Definir</>,
-        },
-        card3: {
-          title: <>A_Definir</>,
-          paragraph: <>A_Definir</>,
-        },
-        card4: {
-          title: <>A_Definir</>,
-          paragraph: <>A_Definir</>,
-        },
-      },
-      fraseObs: <>A_Definir</>,
-      ctaButtonText: <>A_Definir</>,
     },
     features: {
       miniTag: <>A_Definir</>,
@@ -225,8 +182,6 @@ const content = {
       subtitle: <>A_Definir</>,
       imgFeatures: imgFeatures,
       alt: "Imagem ilustrativa da Features",
-      titleMessageFeature: <>A_Definir</>,
-      subtitleMessageFeature: <>A_Definir</>,
       cards: {
         card1: {
           title: <>Técnico-Consultivo</>,
@@ -394,78 +349,28 @@ const content = {
       ctaButtonText: <>A_Definir</>,
     },
     apresentation: {
-      minitag: <>Sobre a Planitur</>,
-      title: <>Planejamento estratégico para destinos turísticos</>,
-      subtitle: (
-        <>
-          Conheça quem que transforma políticas, projetos e experiências em
-          turismo
-        </>
-      ),
+      minitag: <>A_Definir</>,
+      title: <>A_Definir</>,
+      subtitle: <>A_Definir</>,
       paragraph: (
         <>
-          A premissa de que o turismo, quando bem planejado, pode transformar
-          realidades é o que nos move. Partimos da força dos territórios, das
-          pessoas e dos saberes locais para construir soluções colaborativas e
-          sustentáveis.
+          A_Definir
           <br />
           <br />
-          Acreditamos que cada lugar carrega potencialidades únicas, capazes de
-          gerar desenvolvimento, fortalecer identidades e criar oportunidades
-          para quem vive no território. Por isso, trabalhamos valorizando o
-          conhecimento local, estimulando a participação das comunidades e
-          promovendo iniciativas...
+          A_Definir
         </>
       ),
       img: imgApresentation,
       labelButton: <>Continuar lendo</>,
     },
-    cardsSection: {
-      miniTag: <>A_Definir</>,
-      title: <>A_Definir</>,
-      subtitle: <>A_Definir</>,
-      cards: {
-        card1: {
-          title: <>A_Definir</>,
-          icon: <>A_Definir</>,
-          link: "",
-        },
-        card2: {
-          title: <>A_Definir</>,
-          icon: <>A_Definir</>,
-          link: "",
-        },
-        card3: {
-          title: <>A_Definir</>,
-          icon: <>A_Definir</>,
-          link: "",
-        },
-        card4: {
-          title: <>A_Definir</>,
-          icon: <>A_Definir</>,
-        },
-        card5: {
-          title: <>A_Definir</>,
-          icon: <>A_Definir</>,
-        },
-      },
-      fraseText: (
-        <>
-          <p>A_Definir</p> <br />
-          <p>
-            A_Definir <span className="font-bold">A_Definir</span>.
-          </p>
-        </>
-      ),
-      ctaButtonText: "A_Definir",
-    },
     maps: {
-      minitag: <>Roteiros que inspiram</>,
+      minitag: <>A_Definir</>,
       title: <>Mapa das nossas ações pelo turismo</>,
       subtitle: (
         <>Veja onde atuamos e como fortalecemos o turismo em cada território</>
       ),
-      embedsrc: <>A_Definir</>,
+      embedsrc:
+        "https://www.google.com/maps/d/embed?mid=1Dww8t0DOx1bY-AyFUx5MU6tw5TsxcCA&ehbc=2E312F",
     },
     form: {
       minitag: <>Banco de talentos</>,

@@ -18,7 +18,7 @@ function Mapa({ colorMode }) {
         <MotionDivDownToUp className="w-[90%]">
           <div>
             <iframe
-              src="https://www.google.com/maps/d/embed?mid=1Dww8t0DOx1bY-AyFUx5MU6tw5TsxcCA&ehbc=2E312F"
+              src={content.texts.maps.embedsrc}
               width="100%"
               height=""
               style={{ border: 0 }}
