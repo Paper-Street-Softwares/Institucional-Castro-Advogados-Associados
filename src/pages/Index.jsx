@@ -26,7 +26,7 @@ export default function Index() {
           <TeamHome />
           <ContatoHome colorMode={colorMode} />
           {/* <Mapa colorMode={colorMode} /> */}
-          <FormNovoTemplate colorMode={colorMode} />
+          {/* <FormNovoTemplate colorMode={colorMode} /> */}
         </main>
         <Footer phone={true} sociais={false} adress={true} expedient={true} />
       </ColorModeProvider>
