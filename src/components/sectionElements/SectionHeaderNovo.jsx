@@ -46,13 +46,13 @@ function SectionHeaderNovo({
 
     case "defaultDark":
       textDestaque = "text-primaryLight";
-      text = "text-primaryLight";
+      text = "text- text-primaryDark ";
       textOpacity = "text-corOutrosTextosPreto";
       cardBg = "bg-white";
       borderCard = "border-border";
       arrowColor = "text-mutedForeground group-hover:text-primaryDark";
       imageBorder = "border-white";
-      miniTag = "text-primaryDark";
+      miniTag = "text-primaryLight";
       break;
 
     case "defaultLight":
@@ -85,7 +85,7 @@ function SectionHeaderNovo({
 
         {title && (
           <h2
-            className={`text-3xl md:text-3xl font-mainFont font-medium text-primaryLight ${text}`}
+            className={`text-3xl md:text-3xl font-mainFont font-medium${text}`}
           >
             {title} <span className={`italic ${textDestaque}`}>{destaque}</span>{" "}
             {secondPart}

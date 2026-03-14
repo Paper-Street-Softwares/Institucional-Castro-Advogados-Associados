@@ -34,6 +34,7 @@ function Features1({ colorMode }) {
       <SectionArea paddingbot={false}>
         <SectionHeaderNovo
           colorMode={colorMode}
+          miniTitle={content.texts.features.cards.card1.minitag}
           title={content.texts.features.cards.card1.title}
           className="mb-4"
         />

@@ -186,28 +186,58 @@ const content = {
               <Users width={18} />
             </>
           ),
+          minitag: <>Área de Atuação</>,
           title: <>Direito de Família</>,
-          subtitle: <>Soluções jurídicas em divórcio, pensão e guarda.</>,
+          subtitle: (
+            <>
+              Atuação jurídica em questões familiares como divórcio, pensão
+              alimentícia, guarda de filhos e regulamentação de convivência,
+              sempre buscando soluções seguras e equilibradas para todas as
+              partes envolvidas.
+            </>
+          ),
           imgFeatures1: imgFeatures1,
           description: (
             <div>
-              O Direito de Família trata de questões que envolvem relações
-              familiares e momentos importantes da vida das pessoas. Atuamos em
-              demandas como divórcio consensual ou litigioso, pensão
-              alimentícia, guarda de filhos, regulamentação de visitas,
-              reconhecimento ou dissolução de união estável e partilha de bens.
+              O Direito de Família é o ramo do Direito que regula as relações
+              familiares e busca garantir segurança jurídica em momentos
+              importantes da vida das pessoas. Situações como casamento, união
+              estável, divórcio, guarda de filhos e pensão alimentícia envolvem
+              não apenas questões legais, mas também decisões delicadas que
+              impactam diretamente a vida das famílias.
               <br />
               <br />
-              Sabemos que situações familiares muitas vezes envolvem emoções,
-              conflitos e decisões delicadas. Por isso, nossa atuação busca
-              conduzir cada caso com sensibilidade, responsabilidade e
-              estratégia jurídica, sempre priorizando a proteção dos direitos
-              das partes envolvidas e o bem-estar da família.
+              Nossa atuação abrange diferentes demandas relacionadas às relações
+              familiares, incluindo divórcio consensual ou litigioso, dissolução
+              de união estável, definição ou revisão de pensão alimentícia,
+              guarda de filhos, regulamentação de convivência (visitas) e
+              partilha de bens. Também prestamos orientação jurídica em casos de
+              reconhecimento de união estável, investigação ou reconhecimento de
+              paternidade, além de revisões de acordos já estabelecidos quando
+              há mudança nas circunstâncias das partes envolvidas.
               <br />
               <br />
-              Nosso objetivo é oferecer orientação clara e segura, auxiliando os
-              clientes a encontrarem soluções jurídicas equilibradas e adequadas
-              para cada situação.
+              Cada situação familiar possui suas próprias particularidades. Por
+              isso, trabalhamos com uma análise cuidadosa de cada caso, buscando
+              sempre caminhos jurídicos que tragam segurança, equilíbrio e
+              soluções eficazes para nossos clientes. Sempre que possível,
+              priorizamos soluções consensuais, que costumam ser mais rápidas,
+              menos desgastantes e mais adequadas para preservar relações
+              familiares.
+              <br />
+              <br />
+              Sabemos que conflitos familiares muitas vezes são acompanhados de
+              momentos emocionalmente difíceis. Por essa razão, nossa atuação
+              combina conhecimento jurídico, responsabilidade e sensibilidade na
+              condução de cada processo, sempre com foco na proteção dos
+              direitos das partes e, quando há filhos envolvidos, na preservação
+              de seu bem-estar.
+              <br />
+              <br />
+              Nosso compromisso é oferecer orientação clara, atendimento
+              responsável e suporte jurídico seguro em todas as etapas do
+              processo, ajudando cada cliente a tomar decisões informadas e a
+              encontrar soluções adequadas para sua realidade familiar.
             </div>
           ),
           rota: "/features/direitodefamilia",
@@ -219,29 +249,56 @@ const content = {
               <Building width={18} />
             </>
           ),
+          minitag: <>Área de Atuação</>,
           title: <>Direito Bancário</>,
-          subtitle: <>Defesa contra abusos bancários e cobranças indevidas.</>,
+          subtitle: (
+            <>
+              Assessoria jurídica voltada à defesa do consumidor em casos de
+              abusos bancários, cobranças indevidas, contratos irregulares e
+              outras práticas que possam prejudicar o cliente.
+            </>
+          ),
           imgFeatures2: imgFeatures2,
           description: (
             <div>
-              O Direito Bancário envolve as relações entre clientes e
-              instituições financeiras. Muitas vezes, consumidores e empresas
-              enfrentam problemas como cobranças indevidas, juros abusivos,
-              contratos pouco claros ou práticas bancárias que podem causar
-              prejuízos financeiros.
+              O Direito Bancário regula as relações entre clientes e
+              instituições financeiras, estabelecendo limites e regras para
+              garantir que contratos, cobranças e operações financeiras ocorram
+              de forma legal e transparente. No entanto, é comum que
+              consumidores e empresas enfrentem situações como cobranças
+              indevidas, juros abusivos, tarifas irregulares ou contratos com
+              cláusulas pouco claras.
               <br />
               <br />
-              A atuação nessa área inclui análise de contratos bancários,
-              revisão de cláusulas abusivas, defesa em casos de cobranças
-              irregulares, além de orientação jurídica para garantir que as
-              relações com bancos ocorram dentro da legalidade e com
-              transparência.
+              Nossa atuação em Direito Bancário envolve a análise detalhada de
+              contratos e operações financeiras para identificar possíveis
+              irregularidades e práticas abusivas. Prestamos assessoria jurídica
+              em casos que envolvem revisão de contratos bancários, contestação
+              de cobranças indevidas, renegociação de dívidas, discussão sobre
+              juros excessivos e outras situações que possam gerar prejuízos
+              financeiros ao cliente.
               <br />
               <br />
-              Cada situação é analisada com atenção para identificar possíveis
-              irregularidades e buscar a melhor estratégia jurídica para
-              proteger os direitos do cliente e evitar prejuízos financeiros
-              indevidos.
+              Também atuamos na defesa de clientes em conflitos com instituições
+              financeiras relacionados a empréstimos, financiamentos, cartões de
+              crédito, contratos de crédito consignado e demais produtos
+              bancários. Em muitos casos, uma análise jurídica adequada permite
+              identificar cobranças ilegais ou cláusulas abusivas que podem ser
+              revistas judicialmente.
+              <br />
+              <br />
+              Cada caso é analisado de forma cuidadosa, considerando as
+              particularidades da relação contratual e a legislação aplicável. O
+              objetivo é garantir que o cliente compreenda seus direitos e tenha
+              o suporte jurídico necessário para buscar soluções justas e
+              equilibradas diante de eventuais abusos ou irregularidades
+              praticadas pelas instituições financeiras.
+              <br />
+              <br />
+              Nosso compromisso é oferecer orientação clara, atuação técnica e
+              estratégias jurídicas eficazes para proteger os direitos dos
+              clientes e assegurar que as relações com instituições financeiras
+              ocorram dentro dos limites da lei.
             </div>
           ),
           rota: "/features/direitobancario",
@@ -363,8 +420,8 @@ const content = {
       miniTag: <>Nossa Equipe</>,
       title: (
         <>
-          Profissionais comprometidos em oferecer orientação jurídica segura,
-          estratégica e dedicada à defesa dos direitos de nossos clientes.
+          Profissionais para oferecer orientação jurídica e estratégica na
+          defesa dos direitos de nossos clientes.
         </>
       ),
       subtitle: <>A_Definir</>,
@@ -511,15 +568,19 @@ const content = {
       minitag: <>Fale com a nossa equipe</>,
       title: (
         <>
-          Estamos prontos para ouvir seu caso e orientar você da melhor forma.
+          Um canal direto para esclarecer dúvidas e iniciar seu atendimento
+          jurídico.
         </>
       ),
       subtitle: (
         <>
-          Entre em contato e receba orientação jurídica com atenção e segurança.
+          Nesta área você pode entrar em contato para apresentar sua situação,
+          tirar dúvidas iniciais e receber orientações sobre como podemos ajudar
+          no seu caso. Nosso atendimento busca oferecer clareza, organização e
+          segurança desde o primeiro contato.
         </>
       ),
-      ctaButtonText: <>Entre em contato</>,
+      ctaButtonText: <>Ir para contato</>,
     },
     footer: {
       sectionHeader: {

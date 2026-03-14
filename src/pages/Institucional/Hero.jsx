@@ -14,7 +14,7 @@ function Hero({ colorMode }) {
     <SectionArea className={``} paddingTopAndBottom={false}>
       <section
         id="/"
-        className="relative min-h-[500px] max-h-[750px] flex flex-col items-center justify-center overflow-hidden w-full"
+        className="relative min-h-[700px] max-h-[750px] flex flex-col items-center justify-center overflow-hidden w-full"
       >
         <div className="absolute inset-0 z-0">
           {" "}
@@ -23,8 +23,8 @@ function Hero({ colorMode }) {
             alt="Cityscape"
             className="w-full h-full object-cover object-top"
           />
-          <div className="absolute inset-0 bg-black/40 mix-blend-multiply" />
-          <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent" />
+          <div className="absolute inset-0 bg-black/80 mix-blend-multiply" />
+          {/* <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" /> */}
         </div>
 
         <div className="container relative z-10 px-4 md:px-6 text-center pt-[112px] pb-[32px] phone3:pt-[120px] phone3:pb-[62px]">
@@ -49,26 +49,6 @@ function Hero({ colorMode }) {
               subtitle={content.texts.hero.subtitle}
             />
           </motion.div>
-
-          <MotionDivDownToUp>
-            <div>
-              <ButtonReflexo
-                label={content.texts.hero.ctaButtonText}
-                icon={content.texts.svgs.wpp}
-                link={content.texts.links.ctaWhatsapp}
-              />
-            </div>
-          </MotionDivDownToUp>
-
-          <MotionDivDownToUp>
-            <div className="flex justify-center items-center gap-3 text-sm w-full mt-6">
-              <span
-                className={`font-secondFont font-light flex gap-2 items-center text-corOutrosTextosBranca`}
-              >
-                {content.texts.hero.obsHero.text}
-              </span>
-            </div>
-          </MotionDivDownToUp>
         </div>
         <MotionDivDownToUp className="z-10 w-full flex justify-center mb-10">
           <div>

@@ -47,8 +47,14 @@ function MainApp() {
             element={<RoutesFeatures colorMode={colorMode} />}
           >
             <Route index element={<Features1 />} />
-            <Route path="direitodefamilia" element={<Features1 />} />
-            <Route path="direitobancario" element={<Features2 />} />
+            <Route
+              path="direitodefamilia"
+              element={<Features1 colorMode={colorMode} />}
+            />
+            <Route
+              path="direitobancario"
+              element={<Features2 colorMode={colorMode} />}
+            />
           </Route>
         </Routes>
       </Router>

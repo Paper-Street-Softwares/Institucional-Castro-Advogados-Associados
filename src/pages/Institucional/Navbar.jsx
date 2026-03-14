@@ -95,7 +95,7 @@ function Navbar() {
       <div className="max-w-[1215px] mx-auto px-4 ">
         <div className="flex items-center justify-between pt-2 desktop1:py-2">
           {/* LOGO */}
-          <div className="w-[45%] phone3:max-w-[158px] py-2 tablet2:w-[20%] desktop1ex:w-[20%] ">
+          <div className="w-[45%] phone3:max-w-[158px] py-2 tablet2:w-[20%] desktop1:w-[20%] ">
             <Link to="/">
               <img
                 src={content.texts.navbar.logo.img}
@@ -106,7 +106,7 @@ function Navbar() {
           </div>
 
           {/* DESKTOP MENU */}
-          <div className="hidden desktop1ex:flex items-center gap-5 text-primaryDark text-sm tracking-wide font-mainFont font-medium">
+          <div className="hidden desktop1:flex items-center gap-5 text-primaryDark text-sm tracking-wide font-mainFont font-medium">
             <Link to="/" className={linkClass()}>
               HOME
               {underline("home")}
@@ -202,7 +202,7 @@ function Navbar() {
           </div>
 
           {/* RIGHT SIDE */}
-          <section className="desktop1ex:hidden  flex gap-4">
+          <section className="desktop1:hidden  flex gap-4">
             <div className="flex items-center gap-4">
               <button
                 onClick={() => setMobileOpen(!mobileOpen)}

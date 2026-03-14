@@ -14,6 +14,7 @@ function TeamHome({ colorMode }) {
           miniTitle={content.texts.team.miniTag}
           title={content.texts.team.title}
           colorMode={colorMode}
+          className={`max-w-[1215px] w-[90%]`}
         />
         <div className="mx-auto md:px-0 ">
           <div className="grid tablet1:grid-cols-2 justify-center items-start flex-wrap gap-6 tablet2:gap-4 desktop1:gap-2">

@@ -23,7 +23,7 @@ export default function Index() {
           <Hero />
           <About colorMode={colorMode} />
           <Features colorMode={colorMode} />
-          <TeamHome />
+          <TeamHome colorMode={colorMode} />
           <ContatoHome colorMode={colorMode} />
           {/* <Mapa colorMode={colorMode} /> */}
           {/* <FormNovoTemplate colorMode={colorMode} /> */}
