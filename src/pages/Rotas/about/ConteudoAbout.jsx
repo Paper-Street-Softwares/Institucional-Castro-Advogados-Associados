@@ -8,7 +8,7 @@ import content from "../../../content/content";
 import SocialMedia from "../../../components/sections/SocialMediaTemplate";
 import MotionDivDownToUp from "../../../components/animation/MotionDivDownToUp";
 
-function ConteudoAbout({ colorMode }) {
+function ConteudoAbout({ colorMode, social }) {
   const boxRef = useRef(null);
 
   useEffect(() => {
@@ -58,7 +58,7 @@ function ConteudoAbout({ colorMode }) {
         </MotionDivDownToUp>
       </section>
 
-      <SectionArea className={`bg-secondary`} paddingbot={false}>
+      <SectionArea className={`bg-secondary`} paddingbot={true}>
         <div className="flex flex-col gap-20">
           <div className="relative w-[90%] max-w-7xl mx-auto flex flex-col tablet2:flex-row gap-14">
             <MotionDivDownToUp className={`w-full`}>
@@ -95,7 +95,7 @@ function ConteudoAbout({ colorMode }) {
               </div>
             </MotionDivDownToUp>
           </div>
-          <SocialMedia />
+          {social && <SocialMedia />}
         </div>
       </SectionArea>
     </div>

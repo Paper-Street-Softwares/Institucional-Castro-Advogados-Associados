@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import SectionArea from "../../../components/sectionElements/SectionArea";
 import SectionHeaderNovo from "../../../components/sectionElements/SectionHeaderNovo";
 import { ScrollMouse } from "../../../components/animation/MouseScroll";
@@ -7,6 +7,10 @@ import content from "../../../content/content";
 import MotionDivDownToUp from "../../../components/animation/MotionDivDownToUp";
 
 function Features1({ colorMode }) {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
+
   return (
     <div id="tecnicocursivo">
       <section className="relative min-h-[500px] h-[47vh] max-h-[405px] desktop2:min-h-[700px] flex flex-col items-center justify-center overflow-hidden w-full">

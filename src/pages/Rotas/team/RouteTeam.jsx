@@ -7,8 +7,8 @@ function RouteTeam({ colorMode }) {
   return (
     <div>
       <Navbar />
-      <ConteudoTeam colorMode={colorMode} />
-      <Footer />
+      <ConteudoTeam colorMode={colorMode} parceiros={false} />
+      <Footer phone={true} sociais={false} adress={true} expedient={true} />
     </div>
   );
 }

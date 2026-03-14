@@ -1,19 +1,27 @@
 import logo from "../assets/imgs/logo/logo.webp";
 import logoDesktop from "../assets/imgs/logo/logoDesktop.webp";
-import heroDefaultImg from "../assets/imgs/hero/lawHero.webp";
-import heroDefaultMobileImg from "../assets/imgs/hero/lawHeroMobile.webp";
+
+//Imports Hero
 import bgHero from "../assets/imgs/hero/bgHero.webp";
+
+//Imports Apresentation (About Da Rota principal)
 import imgApresentation from "../assets/imgs/apresentation/imgApresentation.webp";
 
-import imgFeatures from "../assets/imgs/features/imgServices.webp";
+//Imports Features
+import imgFeatures1 from "../assets/imgs/features/rotas/features1.webp";
+import imgFeatures2 from "../assets/imgs/features/rotas/features2.webp";
 
+//Imports About
 import aboutImg from "../assets/imgs/about/aboutImg.webp";
 import aboutImgBg from "../assets/imgs/about/rotaAbout/bgAbout.webp";
-import team1 from "../assets/imgs/team/img1.webp";
-import team2 from "../assets/imgs/team/img2.webp";
-import parceiros from "../assets/imgs/team/parceiros.webp";
 import aboutSocialImg from "../assets/imgs/about/aboutSocial.webp";
 
+//Imports Equipe
+import team1 from "../assets/imgs/team/img1.webp";
+import team2 from "../assets/imgs/team/img2.webp";
+import imgBgTeam from "../assets/imgs/team/bgImgTeam.webp";
+
+//Imports Clientes/Parceiros
 import logo1Instituicao from "../assets/imgs/team/instituicoesLogo/logo1.webp";
 import logo2Instituicao from "../assets/imgs/team/instituicoesLogo/logo2.webp";
 import logo3Instituicao from "../assets/imgs/team/instituicoesLogo/logo3.webp";
@@ -22,23 +30,14 @@ import logo5Instituicao from "../assets/imgs/team/instituicoesLogo/logo5.webp";
 import logo6Instituicao from "../assets/imgs/team/instituicoesLogo/logo6.webp";
 import logo7Instituicao from "../assets/imgs/team/instituicoesLogo/logo7.webp";
 import logo8Instituicao from "../assets/imgs/team/instituicoesLogo/logo8.webp";
-
 import logo1Cliente from "../assets/imgs/team/clientesLogo/logo1.webp";
 import logo2Cliente from "../assets/imgs/team/clientesLogo/logo2.webp";
 import logo3Cliente from "../assets/imgs/team/clientesLogo/logo3.webp";
 import logo4Cliente from "../assets/imgs/team/clientesLogo/logo4.webp";
-
 import logo1Parceiro from "../assets/imgs/team/parceirosLogo/logo1.webp";
 import logo2Parceiro from "../assets/imgs/team/parceirosLogo/logo2.webp";
 
-import imgSteps from "../assets/imgs/steps/imgSteps.webp";
-// import logo1 from '../assets/imgs/parceria/Logo1.webp'
-// import logo2 from '../assets/imgs/parceria/Logo2.webp'
-// import logo3 from '../assets/imgs/parceria/Logo3.webp'
-
-import imgFeatures1 from "../assets/imgs/features/rotas/features1.webp";
-import imgFeatures2 from "../assets/imgs/features/rotas/features2.webp";
-import imgFeatures3 from "../assets/imgs/features/rotas/features3.webp";
+//Imports Icons
 import {
   Baby,
   Briefcase,
@@ -60,39 +59,38 @@ import {
   CheckCircle2,
   Clock,
   ShieldCheck,
+  Building,
 } from "lucide-react";
-
-import imgBgTeam from "../assets/imgs/team/bgImgTeam.webp";
 
 const currentYear = new Date().getFullYear();
 
 export const infos = {
-  name: "Planitur Consultoria e Planejamento Turístico",
+  name: "Castro Advocacia",
   email: "contato", // Email desejado pelo cliente
   emailSecundario: "A_Definir", // Email desejado pelo cliente
-  domain: "planiturconsultoria.com", // Sem "www"
+  domain: "castroassociados.adv.br", // Sem "www"
   phone: {
-    ddd: "51",
-    firstPart: "98225", // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: "1864", // Apenas os 4 últimos números
+    ddd: "66",
+    firstPart: "99248", // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: "3413", // Apenas os 4 últimos números
   },
   phoneSecundario: {
-    ddd: "21",
-    firstPart: "98385", // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: "6516", // Apenas os 4 últimos números
+    ddd: "A_Definir",
+    firstPart: "A_Definir", // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: "A_Definir", // Apenas os 4 últimos números
   },
   phoneTerciario: {
-    ddd: "51",
-    firstPart: "98225", // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: "1864", // Apenas os 4 últimos números
+    ddd: "A_Definir",
+    firstPart: "A_Definir", // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: "A_Definir", // Apenas os 4 últimos números
   },
   endereco: (
     <div>
       {/* <p>Endereço:</p> */}
       <p>Endereço:</p>
-      <p>A_Definir</p>
-      <p>A_Definir</p>
-      <p>A_Definir</p>
+      <p>Caminho 41, nº 18, Hernani Sá,</p>
+      <p>Ilhéus - BA,</p>
+      <p>CEP: 45056-572</p>
     </div>
   ),
   enderecoSecundario: (
@@ -110,7 +108,7 @@ export const infos = {
     </div>
   ),
   obs: <span className="italic">A_Definir </span>,
-  instagramProfile: "planiturconsultoria", // Sem o @
+  instagramProfile: "", // Sem o @
   instagramProfileSecundario: "",
   facebookProfile: "",
   linkeDinProfile: "planitur",
@@ -144,220 +142,129 @@ const content = {
       ctaButtonTextResponsive: "Contato",
     },
     hero: {
-      minitagIcon: (
-        <>
-          <BriefcaseBusiness className="w-4 h-4" />
-          {/* <MapPin className="w-4 h-4" /> */}
-          {/* 🚨 */}
-        </>
-      ),
-      miniTag: <>PLANITUR CONSULTORIA</>,
-      FirstPart: <span>Turismo que </span>,
+      miniTag: <>CASTRO ADVOCACIA</>,
+      FirstPart: <span>Excelência jurídica na </span>,
       Destaque: (
         <span className="destaque relative italic font-light">
-          conecta pessoas,
+          defesa de direitos
         </span>
       ),
-      SecondPart: <span>território e natureza</span>,
+      SecondPart: <span></span>,
       subtitle: (
         <p>
-          Transformamos realidades por meio do turismo, com projetos e
-          consultorias sob medida que integram saberes locais e conhecimento
-          técnico para gerar soluções viáveis.
+          Soluções jurídicas seguras para proteger direitos, orientar decisões e
+          enfrentar desafios legais.
         </p>
       ),
       heroBg: bgHero,
+      obsHero: {
+        text: (
+          <>
+            Atendimento próximo, responsável e focado na proteção dos seus
+            direitos.
+          </>
+        ),
+      },
       alt: "Imagem ilustrativa da Seção Início",
-      ctaButtonAriaLabel:
-        "Botão para chamada de ação para contato pelo whatsapp",
-      ctaButtonText: <>A_Definir</>,
+      ctaButtonAriaLabel: "Botão para Whatsapp",
+      ctaButtonText: <>Falar com nossa equipe</>,
       ctaButtonTextSecondary: <>A_Definir</>,
-      secondaryCta: "Contato",
     },
     features: {
-      miniTag: <>A_Definir</>,
-      FirstPart: <span>Planejamento estratégico para destinos turísticos</span>,
+      miniTag: <>NOSSAS ESPECIALIDADES</>,
+      FirstPart: <span>Áreas de atuação jurídica</span>,
       Destaque: <span className="italic font-light">A_Definir</span>,
       SecondPart: <span></span>,
-      subtitle: <>A_Definir</>,
-      imgFeatures: imgFeatures,
+      subtitle: (
+        <>Soluções jurídicas estratégicas para proteger seus direitos.</>
+      ),
       alt: "Imagem ilustrativa da Features",
       cards: {
         card1: {
-          title: <>Técnico-Consultivo</>,
-          subtitle: <>A_Definir</>,
+          icon: (
+            <>
+              <Users width={18} />
+            </>
+          ),
+          title: <>Direito de Família</>,
+          subtitle: <>Soluções jurídicas em divórcio, pensão e guarda.</>,
           imgFeatures1: imgFeatures1,
           description: (
             <div>
-              Apresentam soluções estratégicas para apoiar decisões, estruturar
-              iniciativas e fortalecer territórios. São produtos resultantes
-              desse eixo diagnósticos técnicos, estudos analíticos, estruturação
-              de políticas públicas, planejamento estratégico e territorial,
-              entre outros instrumentos voltados à qualificação da gestão e ao
-              desenvolvimento sustentável. Essas soluções buscam compreender de
-              forma aprofundada os contextos locais, identificar desafios e
-              potencialidades, e orientar a formulação de estratégias mais
-              eficientes e integradas.
+              O Direito de Família trata de questões que envolvem relações
+              familiares e momentos importantes da vida das pessoas. Atuamos em
+              demandas como divórcio consensual ou litigioso, pensão
+              alimentícia, guarda de filhos, regulamentação de visitas,
+              reconhecimento ou dissolução de união estável e partilha de bens.
               <br />
-              <br />A partir de metodologias consolidadas e análise de dados,
-              contribuem para o aprimoramento da tomada de decisão, a
-              organização de iniciativas institucionais e a construção de
-              caminhos consistentes para o desenvolvimento econômico, social e
-              institucional dos territórios.
+              <br />
+              Sabemos que situações familiares muitas vezes envolvem emoções,
+              conflitos e decisões delicadas. Por isso, nossa atuação busca
+              conduzir cada caso com sensibilidade, responsabilidade e
+              estratégia jurídica, sempre priorizando a proteção dos direitos
+              das partes envolvidas e o bem-estar da família.
+              <br />
+              <br />
+              Nosso objetivo é oferecer orientação clara e segura, auxiliando os
+              clientes a encontrarem soluções jurídicas equilibradas e adequadas
+              para cada situação.
             </div>
           ),
-          icon: <Briefcase />,
-          buttonLabelModal: "Fale Conosco",
-          buttonLabel: "Saiba Mais",
+          rota: "/features/direitodefamilia",
         },
 
         card2: {
-          title: <>Formativo e Educacional</>,
-          subtitle: <>A_Definir</>,
+          icon: (
+            <>
+              <Building width={18} />
+            </>
+          ),
+          title: <>Direito Bancário</>,
+          subtitle: <>Defesa contra abusos bancários e cobranças indevidas.</>,
           imgFeatures2: imgFeatures2,
           description: (
             <div>
-              Desenvolvimento de competências e qualificações de pessoas,
-              empresários, gestores, equipes, instituições e comunidades, por
-              meio de cursos, oficinas e processos formativos. As iniciativas
-              são estruturadas para fortalecer habilidades técnicas, gerenciais
-              e estratégicas, estimulando a autonomia, a inovação e a capacidade
-              de adaptação diante dos desafios contemporâneos.
+              O Direito Bancário envolve as relações entre clientes e
+              instituições financeiras. Muitas vezes, consumidores e empresas
+              enfrentam problemas como cobranças indevidas, juros abusivos,
+              contratos pouco claros ou práticas bancárias que podem causar
+              prejuízos financeiros.
               <br />
-              <br />A partir de metodologias participativas e conteúdos
-              alinhados às demandas do mercado e da sociedade, os processos
-              formativos promovem aprendizado prático, troca de experiências e
-              construção coletiva de conhecimento. Dessa forma, contribuem para
-              o aprimoramento profissional, o fortalecimento institucional e o
-              desenvolvimento sustentável de territórios e organizações.
+              <br />
+              A atuação nessa área inclui análise de contratos bancários,
+              revisão de cláusulas abusivas, defesa em casos de cobranças
+              irregulares, além de orientação jurídica para garantir que as
+              relações com bancos ocorram dentro da legalidade e com
+              transparência.
+              <br />
+              <br />
+              Cada situação é analisada com atenção para identificar possíveis
+              irregularidades e buscar a melhor estratégia jurídica para
+              proteger os direitos do cliente e evitar prejuízos financeiros
+              indevidos.
             </div>
           ),
-          icon: <User />,
-          buttonLabelModal: "Fale Conosco",
-          buttonLabel: "Saiba Mais",
-        },
-
-        card3: {
-          title: <>Pesquisa e Produção de Conhecimento</>,
-          subtitle: <>A_Definir</>,
-          imgFeatures3: imgFeatures3,
-
-          description: (
-            <div>
-              Investigação aplicada voltada a qualificar decisões, políticas e
-              projetos por meio do desenvolvimento de estudos, sistematizações,
-              indicadores e produção técnica. Esse eixo busca transformar
-              informações em conhecimento útil para orientar estratégias,
-              avaliar resultados e aprimorar processos de gestão e planejamento.
-              <br />
-              <br />A partir de metodologias de pesquisa, análise de dados e
-              produção de evidências, são elaborados diagnósticos, relatórios
-              técnicos e instrumentos de monitoramento capazes de apoiar
-              gestores, instituições e territórios na tomada de decisões mais
-              consistentes e fundamentadas. Dessa forma, a investigação aplicada
-              contribui para ampliar a compreensão sobre realidades específicas,
-              identificar tendências e subsidiar a formulação de políticas e
-              iniciativas mais eficazes e alinhadas às necessidades sociais e
-              institucionais.
-            </div>
-          ),
-          icon: <Scale />,
-          buttonLabelModal: "Fale Conosco",
-          buttonLabel: "Saiba Mais",
-        },
-
-        card4: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
-          description: (
-            <div>
-              A_Definir
-              <br />
-              A_Definir
-              <br />
-            </div>
-          ),
-          icon: <Gavel />,
-          buttonLabelModal: "Fale Conosco",
-          buttonLabel: "Saiba Mais",
-        },
-
-        card5: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: <Users />,
-          buttonLabelModal: "Fale Conosco",
-          buttonLabel: "Saiba Mais",
-        },
-
-        card6: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: <MessageSquare />,
-          buttonLabelModal: "Fale Conosco",
-          buttonLabel: "Saiba Mais",
-        },
-
-        card7: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: <Shield />,
-          buttonLabelModal: "Fale Conosco",
-          buttonLabel: "Saiba Mais",
-        },
-
-        card8: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: <Briefcase />,
-          buttonLabelModal: "Fale Conosco",
-          buttonLabel: "Saiba Mais",
+          rota: "/features/direitobancario",
         },
       },
-      ctaButtonText: <>A_Definir</>,
     },
     apresentation: {
-      minitag: <>A_Definir</>,
-      title: <>A_Definir</>,
-      subtitle: <>A_Definir</>,
+      minitag: <>CASTRO ADVOGADOS</>,
+      title: <>Advocacia estratégica para proteger o que é seu</>,
+      subtitle: (
+        <>
+          Atuação jurídica com estratégia, clareza e compromisso com resultados
+          reais.
+        </>
+      ),
       paragraph: (
         <>
-          A_Definir
+          Na Castro Advogados, cada caso é tratado com atenção, estratégia e
+          responsabilidade.
           <br />
           <br />
-          A_Definir
+          Entendemos que por trás de toda demanda jurídica existe uma história,
+          uma preocupação e muitas vezes uma decisão importante a ser tomada.
         </>
       ),
       img: imgApresentation,
@@ -365,128 +272,84 @@ const content = {
     },
     maps: {
       minitag: <>A_Definir</>,
-      title: <>Mapa das nossas ações pelo turismo</>,
-      subtitle: (
-        <>Veja onde atuamos e como fortalecemos o turismo em cada território</>
-      ),
+      title: <>A_Definir</>,
+      subtitle: <>A_Definir</>,
       embedsrc:
-        "https://www.google.com/maps/d/embed?mid=1Dww8t0DOx1bY-AyFUx5MU6tw5TsxcCA&ehbc=2E312F",
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30856.096061213342!2d-39.07041971410164!3d-14.824584190866375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x739a08722864ed7%3A0x60b912958a8c020d!2sHernani%20S%C3%A1%2C%20Ilh%C3%A9us%20-%20BA%2C%2045656-542!5e0!3m2!1spt-BR!2sbr!4v1773493236376!5m2!1spt-BR!2sbr",
     },
     form: {
-      minitag: <>Banco de talentos</>,
-      title: <>Quer colaborar com a PLANITUR em projetos e ações técnicas?</>,
-      subtitle: (
-        <>
-          Cadastre-se em nosso banco de talentos, entraremos em contato sempre
-          que tivermos alguma oportunidade em vista!
-        </>
-      ),
+      minitag: <>A_Definir</>,
+      title: <>A_Definir</>,
+      subtitle: <>A_Definir</>,
     },
     about: {
       imagem: {
         img: aboutImg,
         alt: "Imagem ilustrativa da Seção Sobre",
       },
-      miniTag: <>QUEM É A PLANITUR CONSULTORIA</>,
-      FirstPart: <span>Especialistas em Turismo Sustentável</span>,
+      miniTag: <>Castro Advogados Associados</>,
+      FirstPart: <span>Por que escolher nosso escritório?</span>,
       Destaque: <span className="italic font-light">A_Definir</span>,
       SecondPart: <span></span>,
       subtitle: (
         <>
-          Conheça quem que transforma políticas, projetos e experiências em
-          turismo
+          Fundado em 2019 pela Dra. Geovana Castro da Costa — OAB/MT 27.016/O e
+          atualmente funcionando sob a gestão da Dra. Thanielly Castro Ramos —
+          OAB/MT 27.913/O, nosso compromisso é tornar esse momento mais leve,
+          rápido e seguro para você.
         </>
       ),
       paragraph: (
         <div>
-          A PLANITUR é uma empresa socioambiental especializada na gestão e no
-          desenvolvimento de projetos em turismo, recreação, uso público em
-          áreas protegidas e desenvolvimento territorial. Atuamos em todo o
-          Brasil conectando pessoas, territórios e natureza para fortalecer
-          destinos e iniciativas que valorizem modos de vida em equilíbrio com a
-          conservação do meio ambiente, com foco em impacto positivo e
-          resultados duradouros.
+          <span className="font-bold">
+            {" "}
+            Atuação especializada em Direito de Família
+          </span>
+          <br />
+          O escritório atua de forma focada no Direito de Família, lidando
+          diariamente com questões que envolvem relações familiares, separações
+          e reorganização da vida jurídica após o fim de um relacionamento. Essa
+          especialização permite conduzir cada caso com conhecimento técnico e
+          sensibilidade diante das particularidades que esse tipo de situação
+          exige.
           <br />
           <br />
-          Nosso propósito é fazer do turismo uma ferramenta de transformação
-          socioambiental, capaz de conservar a natureza, valorizar culturas
-          locais, fortalecer identidades e ampliar oportunidades para
-          comunidades e territórios. Acreditamos no turismo como um meio de
-          cuidado com os lugares e com as pessoas que os habitam.
+          <span className="font-bold">Experiência em divórcios online</span>
+          <br />
+          Com experiência na condução de divórcios realizados de forma digital,
+          o processo pode ser iniciado e acompanhado sem necessidade de
+          deslocamentos ou burocracias desnecessárias. A estrutura digital
+          permite que todo o procedimento seja conduzido com segurança jurídica
+          e praticidade para as partes envolvidas.
           <br />
           <br />
-          Entregamos soluções que unem rigor técnico, sensibilidade territorial
-          e diálogo com os atores locais, orientadas por processos
-          participativos e pela construção de legados que permanecem além dos
-          projetos.
+          <span className="font-bold">Atendimento ágil e personalizado</span>
+          <br />
+          Cada caso é analisado de forma individual, respeitando as necessidades
+          e circunstâncias de cada cliente. O atendimento é conduzido com
+          agilidade e atenção, buscando oferecer orientações claras e respostas
+          rápidas ao longo de todo o processo.
           <br />
           <br />
-          Atuamos com consultoria, assessoria, planejamento, curadoria,
-          pesquisa, instrutoria e capacitações, além do desenvolvimento e
-          implementação de projetos voltados ao turismo responsável e
-          sustentável. Também apoiamos instituições na estruturação de propostas
-          e captação de recursos, transformando boas ideias em projetos viáveis
-          e financiáveis.
+          <span className="font-bold">Transparência em todas as etapas</span>
+          <br />A condução do processo ocorre com total transparência, mantendo
+          o cliente informado sobre cada etapa, prazos e procedimentos
+          envolvidos. Essa clareza permite que todas as decisões sejam tomadas
+          com segurança e compreensão sobre o andamento do caso.
         </div>
       ),
       imagemBg: aboutImgBg,
-      benefits: {
-        cards: {
-          card1: {
-            title: <>A_Definir</>,
-            description: <>A_Definir</>,
-            icon: (
-              <>
-                {" "}
-                <CheckCircle2 className="w-5 h-5" />
-              </>
-            ),
-          },
-          card2: {
-            title: <>A_Definir</>,
-            description: <>A_Definir</>,
-            icon: (
-              <>
-                {" "}
-                <CheckCircle2 className="w-5 h-5" />
-              </>
-            ),
-          },
-        },
-      },
-      ctaButtonText: <>A_Definir</>,
       buttonModalLabelAbout: "Continuar lendo",
-      modal: (
-        <p className="font-secondFont">
-          A_Definir
-          <br />
-          <br />
-          A_Definir
-          <br />
-          <br />
-          A_Definir
-          <br />
-          <br />
-          A_Definir
-        </p>
-      ),
-      paragraphModalCta: "Entre em contato",
-      ctaButtonAriaLabel: "Botão para entrar em contato",
-
+      ctaButtonAriaLabel: "Botão de Ação",
       aboutSocial: {
         img: {
           img: aboutSocialImg,
-          alt: `Foto do Instagram do ${infos.name}`,
+          alt: `Foto do Instagram de ${infos.name}`,
           altDefault: "Imagem ilustrativa da Seção de Redes Sociais",
         },
-        miniTag: <>Redes sociais</>,
-        title: <>Conecte-se conosco</>,
-        subtitle: (
-          <>
-            Acompanhe novidades, dicas e projetos que fortalecem o turismo em
-            nossos canais
-          </>
-        ),
+        miniTag: <>A_Definir</>,
+        title: <>A_Definir</>,
+        subtitle: <>A_Definir</>,
         paragraph: <p></p>,
         labelInstagram: "Siga-nos no Instagram",
         labelFacebook: "Siga-nos no Facebook",
@@ -496,210 +359,85 @@ const content = {
         labelYoutube: "Siga-nos no Youtube",
       },
     },
-    ctaSection: {
-      miniTag: <>A_Definir</>,
-      title: <h1>A_Definir</h1>,
-      subtitle: (
-        <div>
-          <p className="mb-6 font-secondFont">A_Definir</p>
-        </div>
-      ),
-      container: {
-        topics: {
-          topic1: <>A_Definir</>,
-          topic2: <>A_Definir</>,
-          topic3: <>A_Definir</>,
-          topic4: <>A_Definir</>,
-        },
-      },
-      ctaButtonText: <>A_Definir</>,
-      ctaButtonAriaLabel:
-        "Botão para chamada de ação para contato pelo whatsapp",
-    },
-    steps: {
-      miniTag: <>A_Definir</>,
-      FirstPart: <span> A_Definir</span>,
-      Destaque: <span className="italic font-light"> A_Definir </span>,
-      SecondPart: <span>A_Definir</span>,
-
-      subtitle: <></>,
-      img: imgSteps,
-      alt: "Imagem ilustrativa da Seção Passo a Passo",
-      cards: {
-        card1: {
-          stepNumber: 1,
-          cardTitle: <>A_Definir</>,
-          cardDescription: <>A_Definir</>,
-        },
-        card2: {
-          stepNumber: 2,
-          cardTitle: <>A_Definir</>,
-          cardDescription: <>A_Definir</>,
-        },
-        card3: {
-          stepNumber: 3,
-          cardTitle: <>A_Definir</>,
-          cardDescription: <>A_Definir</>,
-        },
-        card4: {
-          stepNumber: 4,
-          cardTitle: <>A_Definir</>,
-          cardDescription: <>A_Definir</>,
-        },
-      },
-      ctaButtonText: <>A_Definir</>,
-    },
-    blog: {
-      miniTag: <>A_Definir</>,
-      title: <>A_Definir</>,
-      subtitle: "",
-      img: imgSteps,
-      labelCards: "Ver mais",
-      label: "Clique aqui para ver todas as matérias",
-      blogLink: "", //sem "https://"
-    },
-    parceria: {
-      miniTag: <>A_Definir</>,
-      title: <>A_Definir</>,
-      subtitle: <>A_Definir</>,
-      images: [
-        {
-          role: "A_Definir",
-          // img: logo1,
-          alt: "Logomarca parceira",
-          description: "A_Definir",
-          name: "A_Definir",
-        },
-        {
-          role: "A_Definir",
-          // img: logo2,
-          alt: "Logomarca parceira",
-          description: "A_Definir",
-          name: "A_Definir",
-        },
-        {
-          role: "A_Definir",
-          // img: logo3,
-          alt: "Logomarca parceira",
-          description: "A_Definir",
-          name: "A_Definir",
-        },
-      ],
-    },
-    diferences: {
-      miniTag: <>A_Definir</>,
-      title: <>A_Definir</>,
-      subtitle: <>A_Definir</>,
-      cards: {
-        card1: {
-          icon: Check,
-          text: <>A_Definir</>,
-        },
-        card2: {
-          icon: Check,
-          text: <>A_Definir</>,
-        },
-        card3: {
-          icon: Check,
-          text: <>A_Definir</>,
-        },
-      },
-    },
-    speed: {
-      miniTag: <>A_Definir</>,
-      title: <>A_Definir</>,
-      subtitle: <>A_Definir</>,
-      cards: {
-        card1: {
-          icon: Clock,
-          text: <>A_Definir</>,
-        },
-        card2: {
-          icon: Users,
-          text: <>A_Definir</>,
-        },
-        card3: {
-          icon: ShieldCheck,
-          text: <>A_Definir</>,
-        },
-      },
-      textFooter: <>A_Definir</>,
-    },
-    authority: {
-      miniTag: <>A_Definir</>,
-      title: <>A_Definir</>,
-      subtitle: <>A_Definir</>,
-      cards: {
-        card1: {
-          title: <>A_Definir</>,
-          paragraph: <>A_Definir</>,
-        },
-        card2: {
-          title: <>A_Definir</>,
-          paragraph: <>A_Definir</>,
-        },
-        card3: {
-          title: <>A_Definir</>,
-          paragraph: <>A_Definir</>,
-        },
-        card4: {
-          title: <>A_Definir</>,
-          paragraph: <>A_Definir</>,
-        },
-      },
-      ctaButtonText: <>A_Definir</>,
-    },
     team: {
-      miniTag: <>A_Definir</>,
-      title: <>Nosso time</>,
-      subtitle: <>Especialistas em planejamento turístico</>,
+      miniTag: <>Nossa Equipe</>,
+      title: (
+        <>
+          Profissionais comprometidos em oferecer orientação jurídica segura,
+          estratégica e dedicada à defesa dos direitos de nossos clientes.
+        </>
+      ),
+      subtitle: <>A_Definir</>,
       imgFundo: imgBgTeam,
       cards: {
         card1: {
           img: team1,
-          name: <>Angelice Motter</>,
-          role: (
-            <>
-              Líder Administrativo e <br /> Coordenadora de Projetos
-            </>
-          ),
+          name: <>Dra. Geovana Castro da Costa</>,
+          role: <>OAB/MT 27.016/O</>,
           description: (
             <>
-              Mestre em Turismo e Hotelaria (2025), pós-graduada em Ecoturismo e
-              Interpretação da Natureza (2025) e graduada em Turismo pela
-              Universidade Federal do Rio Grande (2022).
+              Dra. Geovana Castro da Costa é advogada dedicada à atuação
+              jurídica responsável e estratégica, sempre com o compromisso de
+              oferecer aos seus clientes orientação clara e segura em cada etapa
+              de suas demandas.
               <br />
               <br />
-              Sua trajetória acadêmica e profissional concentra-se nos temas de
-              planejamento e gestão do turismo, políticas públicas, governança,
-              sustentabilidade e turismo de natureza.
+              Ao longo de sua trajetória profissional, tem desenvolvido uma
+              atuação pautada pela análise cuidadosa de cada caso, compreendendo
+              que por trás de toda questão jurídica existem pessoas, histórias e
+              decisões importantes a serem tomadas. Por isso, acredita que o
+              exercício da advocacia vai além da condução de processos — envolve
+              escuta, atenção e a construção de soluções jurídicas adequadas
+              para cada situação.
+              <br />
+              <br />
+              Sua prática profissional é guiada pelos princípios da ética, da
+              responsabilidade e do comprometimento com a defesa dos direitos de
+              seus clientes. Cada caso é tratado com dedicação, buscando sempre
+              estratégias jurídicas eficientes e soluções que tragam mais
+              segurança e tranquilidade para aqueles que confiam em seu
+              trabalho.
+              <br />
+              <br />
+              Com postura profissional, atendimento próximo e foco em resultados
+              jurídicos consistentes, Dra. Geovana Castro da Costa atua com o
+              propósito de oferecer suporte jurídico confiável e de qualidade.
             </>
           ),
-          linkedIn:
-            "https://www.linkedin.com/in/angelice-raquel-motter-manzino-a261b2217/",
+          linkedIn: "",
         },
         card2: {
           img: team2,
-          name: <>Tarcísio Cunha</>,
-          role: <>Líder de Projetos</>,
+          name: <>Dra. Thanielly Castro Ramos</>,
+          role: <>OAB/MT 27.913/O</>,
           description: (
             <>
-              Doutorando em Políticas Públicas, Estratégias e Desenvolvimento
-              pela Universidade Federal do Rio de Janeiro (UFRJ), Mestre em
-              Ecoturismo e Conservação pela Universidade Federal do Estado do
-              Rio de Janeiro (UNIRIO), Especialista em Gestão e Governança de
-              Áreas Marinhas Protegidas pela Universidad Austral de Chile (UACh)
-              e bacharel em Turismo pela Universidade Federal Rural do Rio de
-              Janeiro (UFRRJ).
+              Dra. Thanielly Castro Ramos é advogada comprometida com a
+              construção de soluções jurídicas responsáveis e eficazes, sempre
+              buscando oferecer aos seus clientes um atendimento baseado na
+              confiança, na transparência e na dedicação.
               <br />
               <br />
-              Atua há mais de 10 anos com turismo baseado na natureza. Membro da
-              Comissão Mundial de Áreas Protegidas e do Grupo de Especialistas
-              em Turismo e Áreas Protegidas da União Internacional para a
-              Conservação da Natureza (IUCN).
+              Sua atuação profissional é marcada pela atenção aos detalhes e
+              pela análise cuidadosa de cada situação apresentada. Entende que
+              cada caso possui particularidades que exigem estratégia,
+              planejamento e conhecimento jurídico para que os direitos de seus
+              clientes sejam devidamente protegidos.
+              <br />
+              <br />
+              Com uma prática jurídica pautada na ética e na responsabilidade,
+              Dra. Thanielly dedica-se a orientar seus clientes com clareza,
+              auxiliando na compreensão das questões jurídicas envolvidas e na
+              tomada de decisões mais seguras.
+              <br />
+              <br />
+              Seu trabalho tem como objetivo não apenas conduzir processos, mas
+              também oferecer suporte jurídico sólido e confiável, contribuindo
+              para a solução de conflitos e para a defesa dos interesses de quem
+              busca seu atendimento.
             </>
           ),
-          linkedIn: "https://www.linkedin.com/in/tarcisio-cunha/",
+          linkedIn: "",
         },
       },
       instituicoesAtendidas: {
@@ -764,303 +502,43 @@ const content = {
           alt: "LogoMarca parceira",
         },
       },
-      sectionTitle: <>Colaboração que gera resultados</>,
-      titleClientes: <>Nossos Clientes</>,
-      titleParceiros: <>Nossos Parceiros</>,
-      titleInstituicoes: <>Instituições Atendidas</>,
+      sectionTitle: <>A_Definir</>,
+      titleClientes: <>A_Definir</>,
+      titleParceiros: <>A_Definir</>,
+      titleInstituicoes: <>A_Definir</>,
     },
-    faq: {
-      miniTag: <>A_Definir</>,
-      title: <>A_Definir</>,
-      subtitle: <>A_Definir</>,
-      questions: {
-        question1: {
-          question: <>A_Definir</>,
-          answer: <>A_Definir</>,
-        },
-        question2: {
-          question: <>A_Definir</>,
-          answer: <>A_Definir</>,
-        },
-        question3: {
-          question: <>A_Definir</>,
-          answer: <>A_Definir</>,
-        },
-        question4: {
-          question: <>A_Definir</>,
-          answer: <>A_Definir</>,
-        },
-      },
-
-      paragraph: "Clique aqui caso tenha mais dúvidas",
+    contato: {
+      minitag: <>Fale com a nossa equipe</>,
+      title: (
+        <>
+          Estamos prontos para ouvir seu caso e orientar você da melhor forma.
+        </>
+      ),
+      subtitle: (
+        <>
+          Entre em contato e receba orientação jurídica com atenção e segurança.
+        </>
+      ),
+      ctaButtonText: <>Entre em contato</>,
     },
-    // team: {
-    //   miniTag: <>A_Definir</>,
-    //   title: <>A_Definir</>,
-    //   subtitle: <>A_Definir</>,
-    //   members: {
-    //     member1: {
-    //       img: {
-    //         alt: 'Edison Matos',
-    //       },
-    //       name: 'Edison Matos',
-    //       role: 'CEO & Diretor de Desenvolvimento',
-    //       description: '',
-    //       socialMedia: {
-    //         icon1: (
-    //           <svg
-    //             xmlns="http://www.w3.org/2000/svg"
-    //             width="20"
-    //             height="20"
-    //             viewBox="0 0 24 24"
-    //             fill="none"
-    //             stroke="black"
-    //             stroke-width="2"
-    //             stroke-linecap="round"
-    //             stroke-linejoin="round"
-    //             class="lucide lucide-linkedin"
-    //           >
-    //             <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
-    //             <rect width="4" height="12" x="2" y="9" />
-    //             <circle cx="4" cy="4" r="2" />
-    //           </svg>
-    //         ),
-    //         link1: 'https://www.linkedin.com/in/edison-matoss/',
-    //         icon2: (
-    //           <svg
-    //             xmlns="http://www.w3.org/2000/svg"
-    //             width="20"
-    //             height="20"
-    //             viewBox="0 0 24 24"
-    //             fill="none"
-    //             stroke="black"
-    //             stroke-width="2"
-    //             stroke-linecap="round"
-    //             stroke-linejoin="round"
-    //             class="lucide lucide-github"
-    //           >
-    //             <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
-    //             <path d="M9 18c-4.51 2-5-2-7-2" />
-    //           </svg>
-    //         ),
-    //         link2: 'https://github.com/EdisonMatos',
-    //         icon3: (
-    //           <svg
-    //             xmlns="http://www.w3.org/2000/svg"
-    //             width="20"
-    //             height="20"
-    //             viewBox="0 0 24 24"
-    //             fill="none"
-    //             stroke="black"
-    //             stroke-width="2"
-    //             stroke-linecap="round"
-    //             stroke-linejoin="round"
-    //             class="lucide lucide-globe"
-    //           >
-    //             <circle cx="12" cy="12" r="10" />
-    //             <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
-    //             <path d="M2 12h20" />
-    //           </svg>
-    //         ),
-    //         link3: 'https://edisonmatos.github.io/',
-    //       },
-    //     },
-    //     member2: {
-    //       img: {
-    //         img: teamMemberImg2,
-    //         alt: 'Gabriel Adans',
-    //       },
-    //       name: 'Gabriel Adans',
-    //       role: 'Marketing Outsourcing',
-    //       socialMedia: {
-    //         icon1: (
-    //           <svg
-    //             xmlns="http://www.w3.org/2000/svg"
-    //             width="20"
-    //             height="20"
-    //             viewBox="0 0 24 24"
-    //             fill="none"
-    //             stroke="black"
-    //             stroke-width="2"
-    //             stroke-linecap="round"
-    //             stroke-linejoin="round"
-    //             class="lucide lucide-linkedin"
-    //           >
-    //             <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
-    //             <rect width="4" height="12" x="2" y="9" />
-    //             <circle cx="4" cy="4" r="2" />
-    //           </svg>
-    //         ),
-    //         link1: 'https://www.linkedin.com/in/gabriel-adans-2bb029227/',
-    //         icon2: (
-    //           <svg
-    //             xmlns="http://www.w3.org/2000/svg"
-    //             width="20"
-    //             height="20"
-    //             viewBox="0 0 24 24"
-    //             fill="none"
-    //             stroke="black"
-    //             stroke-width="2"
-    //             stroke-linecap="round"
-    //             stroke-linejoin="round"
-    //             class="lucide lucide-github"
-    //           >
-    //             <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
-    //             <path d="M9 18c-4.51 2-5-2-7-2" />
-    //           </svg>
-    //         ),
-    //         link2: 'https://github.com/GabrielAdans',
-    //         icon3: (
-    //           <svg
-    //             xmlns="http://www.w3.org/2000/svg"
-    //             width="20"
-    //             height="20"
-    //             viewBox="0 0 24 24"
-    //             fill="none"
-    //             stroke="black"
-    //             stroke-width="2"
-    //             stroke-linecap="round"
-    //             stroke-linejoin="round"
-    //             class="lucide lucide-instagram"
-    //           >
-    //             <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
-    //             <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-    //             <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
-    //           </svg>
-    //         ),
-    //         link3: 'https://www.instagram.com/adansgabriel/',
-    //       },
-    //     },
-    //     member3: {
-    //       img: {
-    //         img: teamMemberImg3,
-    //         alt: 'Gabriel Souza',
-    //       },
-    //       name: 'Gabriel Souza',
-    //       role: 'Desenvolvedor Frontend',
-    //       socialMedia: {
-    //         icon1: (
-    //           <svg
-    //             xmlns="http://www.w3.org/2000/svg"
-    //             width="20"
-    //             height="20"
-    //             viewBox="0 0 24 24"
-    //             fill="none"
-    //             stroke="black"
-    //             stroke-width="2"
-    //             stroke-linecap="round"
-    //             stroke-linejoin="round"
-    //             class="lucide lucide-linkedin"
-    //           >
-    //             <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
-    //             <rect width="4" height="12" x="2" y="9" />
-    //             <circle cx="4" cy="4" r="2" />
-    //           </svg>
-    //         ),
-    //         link1: ' https://www.linkedin.com/in/gabriel-souza-b9945929a',
-    //         icon2: (
-    //           <svg
-    //             xmlns="http://www.w3.org/2000/svg"
-    //             width="20"
-    //             height="20"
-    //             viewBox="0 0 24 24"
-    //             fill="none"
-    //             stroke="black"
-    //             stroke-width="2"
-    //             stroke-linecap="round"
-    //             stroke-linejoin="round"
-    //             class="lucide lucide-github"
-    //           >
-    //             <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
-    //             <path d="M9 18c-4.51 2-5-2-7-2" />
-    //           </svg>
-    //         ),
-    //         link2: 'https://github.com/BiellSouza',
-    //         icon3: (
-    //           <svg
-    //             xmlns="http://www.w3.org/2000/svg"
-    //             width="20"
-    //             height="20"
-    //             viewBox="0 0 24 24"
-    //             fill="none"
-    //             stroke="black"
-    //             stroke-width="2"
-    //             stroke-linecap="round"
-    //             stroke-linejoin="round"
-    //             class="lucide lucide-instagram"
-    //           >
-    //             <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
-    //             <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-    //             <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
-    //           </svg>
-    //         ),
-    //         link3: ' https://www.instagram.com/biel.souza.904',
-    //       },
-    //     },
-    //     member4: {
-    //       img: {
-    //         img: teamMemberImg4,
-    //         alt: 'Luiz Felipe',
-    //       },
-    //       name: 'Luiz Felipe',
-    //       role: 'Designer Ourtsourcing',
-    //       socialMedia: {
-    //         icon1: (
-    //           <svg
-    //             xmlns="http://www.w3.org/2000/svg"
-    //             width="20"
-    //             height="20"
-    //             viewBox="0 0 24 24"
-    //             fill="none"
-    //             stroke="black"
-    //             stroke-width="2"
-    //             stroke-linecap="round"
-    //             stroke-linejoin="round"
-    //             class="lucide lucide-linkedin"
-    //           >
-    //             <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
-    //             <rect width="4" height="12" x="2" y="9" />
-    //             <circle cx="4" cy="4" r="2" />
-    //           </svg>
-    //         ),
-    //         link1: 'https://www.linkedin.com/in/luiz-felipe-leite-95a246192/',
-    //         icon2: (
-    //           <svg
-    //             xmlns="http://www.w3.org/2000/svg"
-    //             width="20"
-    //             height="20"
-    //             viewBox="0 0 24 24"
-    //             fill="none"
-    //             stroke="black"
-    //             stroke-width="2"
-    //             stroke-linecap="round"
-    //             stroke-linejoin="round"
-    //             class="lucide lucide-instagram"
-    //           >
-    //             <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
-    //             <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-    //             <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
-    //           </svg>
-    //         ),
-    //         link2: 'https://www.instagram.com/luizleitedesigner/',
-    //         icon3: (
-    //           <svg
-    //             xmlns="http://www.w3.org/2000/svg"
-    //             width="20"
-    //             height="18"
-    //             fill="black"
-    //             className=" bi bi-whatsapp"
-    //             viewBox="0 0 16 16"
-    //           >
-    //             <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
-    //           </svg>
-    //         ),
-    //         link3: 'https://wa.me/+556596241854',
-    //       },
-    //     },
-    //   },
-    // },
     footer: {
+      sectionHeader: {
+        miniTag: <>Entre em contato</>,
+        title: (
+          <>
+            Nossa equipe está pronta para ouvir seu caso e orientar você com
+            atenção e responsabilidade.
+          </>
+        ),
+        subtitle: (
+          <>
+            Se você precisa de orientação jurídica ou deseja esclarecer alguma
+            dúvida, entre em contato com a Castro Advogados. Nossa equipe está
+            disponível para entender sua situação e oferecer o suporte jurídico
+            necessário com clareza, segurança e profissionalismo.
+          </>
+        ),
+      },
       copyrightLine: ` ${currentYear} - ${infos.name} - Todos os direitos reservados`,
       footerDivulgacaoText: "Gostaria de ter um site como este? Clique aqui",
       midSectionName: "Até mais",
@@ -1306,53 +784,6 @@ const content = {
         ponto3: "Resultados",
       },
     },
-    // socios: {
-    //   socio1: {
-    //     nome: <>A_Definir</>,
-    //     rota: <>A_Definir</>,
-    //     sobrenome: '',
-    //     telefone: <>A_Definir</>,
-    //     whatsapp: <>A_Definir</>,
-    //     email: '',
-    //     social: {
-    //       instagram: '',
-    //       facebook: '',
-    //       linkedin: '',
-    //       x: '',
-    //       tiktok: '',
-    //     },
-    //   },
-    //   socio2: {
-    //     nome: <>A_Definir</>,
-    //     rota: <>A_Definir</>,
-    //     sobrenome: '',
-    //     telefone: '00000000000',
-    //     whatsapp: '00000000000',
-    //     email: '',
-    //     social: {
-    //       instagram: '',
-    //       facebook: '',
-    //       linkedin: '',
-    //       x: '',
-    //       tiktok: '',
-    //     },
-    //   },
-    //   socio4: {
-    //     nome: <>A_Definir</>,
-    //     rota: <>A_Definir</>,
-    //     sobrenome: '',
-    //     telefone: <>A_Definir</>,
-    //     whatsapp: <>A_Definir</>,
-    //     email: '',
-    //     social: {
-    //       instagram: '',
-    //       facebook: '',
-    //       linkedin: '',
-    //       x: '',
-    //       tiktok: '',
-    //     },
-    //   },
-    // },
     links: {
       instagram: `https://www.instagram.com/${infos.instagramProfile}/`,
       instagramSecondario: `https://www.instagram.com/${infos.instagramProfileSecundario}/`,

@@ -86,6 +86,8 @@ function Navbar() {
       <span className="absolute left-0 -bottom-2 w-full h-[2px] bg-primaryLight" />
     );
 
+  const linksFeatures = Object.values(content.texts.features.cards);
+
   return (
     <div
       className={`bg-terciary fixed w-full z-50 ${mobileOpen ? "" : " border-b-2 border-[#C03D1A]"}`}
@@ -179,30 +181,15 @@ function Navbar() {
                     : "opacity-0 invisible"
                 }`}
               >
-                <Link
-                  to="/features/tecnicocursivo"
-                  className="block px-4 py-2 hover:text-primaryLight"
-                >
-                  Técnico-Consultivo
-                </Link>
-                <Link
-                  to="/features/formativoeducacional"
-                  className="block px-4 py-2 hover:text-primaryLight"
-                >
-                  Formativo e Educacional
-                </Link>
-                <Link
-                  to="/features/pesquisaeproducaodeconhecimento"
-                  className="block px-4 py-2 hover:text-primaryLight"
-                >
-                  Pesquisa e Produção de Conhecimento
-                </Link>
-                {/* <Link
-                  to="/features/contencioso"
-                  className="block px-4 py-2 hover:text-primaryLight"
-                >
-                  Contencioso
-                </Link> */}
+                {linksFeatures.map((item, index) => (
+                  <Link
+                    key={index}
+                    to={item.rota}
+                    className="block px-4 py-2 hover:text-primaryLight"
+                  >
+                    {item.title}
+                  </Link>
+                ))}
               </div>
             </div>
 
@@ -305,35 +292,16 @@ function Navbar() {
           </button>
 
           {mobileAreasOpen && (
-            <div className="mt-2 ml-4 flex flex-col gap-2 text-sm normal-case">
-              <Link
-                to="/features/tecnicocursivo"
-                onClick={() => setMobileOpen(false)}
-                className={`${linkClass("/features/ambiental")}`}
-              >
-                Técnico-Consultivo
-              </Link>
-              <Link
-                to="/features/formativoeducacional"
-                onClick={() => setMobileOpen(false)}
-                className={`${linkClass("/features/compliance")}`}
-              >
-                Formativo e Educacional
-              </Link>
-              <Link
-                to="/features/pesquisaeproducaodeconhecimento"
-                onClick={() => setMobileOpen(false)}
-                className={`${linkClass("/features/concorrencial")}`}
-              >
-                Pesquisa e Produção de Conhecimento
-              </Link>
-              {/* <Link
-                to="/features/contencioso"
-                onClick={() => setMobileOpen(false)}
-                className={`${linkClass("/features/contencioso")}`}
-              >
-                Contencioso
-              </Link> */}
+            <div className="mt-2 ml-4 flex flex-col gap-0 text-sm normal-case">
+              {linksFeatures.map((item, index) => (
+                <Link
+                  key={index}
+                  to={item.rota}
+                  className=" py-2 hover:text-primaryLight uppercase flex items-center gap-2"
+                >
+                  <span>{item.icon}</span> {item.title}
+                </Link>
+              ))}
             </div>
           )}
         </div>

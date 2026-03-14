@@ -4,7 +4,6 @@ import SectionWrapper from "../../components/sectionElements/SectionWrapper";
 import SectionHeaderNovo from "../../components/sectionElements/SectionHeaderNovo";
 import content from "../../content/content";
 import AboutFading from "../../components/sectionElements/AboutFading";
-import ButtonReflexo from "../../components/interactives/ButtonReflexo";
 import { ArrowRight } from "lucide-react";
 import { Navigate, useNavigate } from "react-router-dom";
 import MotionDivDownToUp from "../../components/animation/MotionDivDownToUp";

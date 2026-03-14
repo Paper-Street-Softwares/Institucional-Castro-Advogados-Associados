@@ -47,12 +47,8 @@ function MainApp() {
             element={<RoutesFeatures colorMode={colorMode} />}
           >
             <Route index element={<Features1 />} />
-            <Route path="tecnicocursivo" element={<Features1 />} />
-            <Route path="formativoeducacional" element={<Features2 />} />
-            <Route
-              path="pesquisaeproducaodeconhecimento"
-              element={<Features3 />}
-            />
+            <Route path="direitodefamilia" element={<Features1 />} />
+            <Route path="direitobancario" element={<Features2 />} />
           </Route>
         </Routes>
       </Router>

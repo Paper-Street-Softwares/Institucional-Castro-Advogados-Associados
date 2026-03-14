@@ -8,7 +8,7 @@ function RouteAbout({ colorMode }) {
     <div>
       <Navbar />
       <ConteudoAbout colorMode={colorMode} />
-      <Footer />
+      <Footer phone={true} sociais={false} adress={true} expedient={true} />
     </div>
   );
 }

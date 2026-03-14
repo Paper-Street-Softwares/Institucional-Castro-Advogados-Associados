@@ -29,7 +29,7 @@ export default function TeamMember({
           alt={alt}
           width={260}
           height={260}
-          className="max-w-[300px] w-[90%] mx-auto h-auto rounded-full object-cover"
+          className="w-[178px] h-[178px] mx-auto rounded-full object-cover"
         />
       </MotionDivDownToUp>
       {/* Nome */}

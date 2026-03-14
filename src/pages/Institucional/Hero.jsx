@@ -59,6 +59,16 @@ function Hero({ colorMode }) {
               />
             </div>
           </MotionDivDownToUp>
+
+          <MotionDivDownToUp>
+            <div className="flex justify-center items-center gap-3 text-sm w-full mt-6">
+              <span
+                className={`font-secondFont font-light flex gap-2 items-center text-corOutrosTextosBranca`}
+              >
+                {content.texts.hero.obsHero.text}
+              </span>
+            </div>
+          </MotionDivDownToUp>
         </div>
         <MotionDivDownToUp className="z-10 w-full flex justify-center mb-10">
           <div>
