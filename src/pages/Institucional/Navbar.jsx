@@ -90,7 +90,7 @@ function Navbar() {
 
   return (
     <div
-      className={`bg-terciary fixed w-full z-50 ${mobileOpen ? "" : " border-b-2 border-[#C03D1A]"}`}
+      className={`bg-terciary fixed w-full z-50 ${mobileOpen ? "" : " border-b-2 border-[#C03D1A]"} `}
     >
       <div className="max-w-[1215px] mx-auto px-4 ">
         <div className="flex items-center justify-between pt-2 desktop1:py-2">
