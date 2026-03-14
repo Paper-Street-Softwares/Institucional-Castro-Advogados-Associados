@@ -12,7 +12,7 @@ function Features2({ colorMode }) {
   });
   return (
     <div id="formativoeducacional">
-      <section className="relative min-h-[500px] h-[47vh] max-h-[405px] desktop2:min-h-[700px]  flex flex-col items-center justify-center overflow-hidden w-full">
+      <section className="relative min-h-[400px] h-[47vh] max-h-[405px] desktop2:min-h-[700px]  flex flex-col items-center justify-center overflow-hidden w-full">
         <div className="absolute inset-0 z-0">
           <img
             src={content.texts.features.cards.card2.imgFeatures2}

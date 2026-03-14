@@ -47,8 +47,8 @@ function ConteudoTeam({ colorMode, parceirosSection }) {
         <SectionHeaderNovo
           title={content.texts.team.title}
           subtitle={content.texts.team.subtitle}
-          className={`mb-2`}
           colorMode={colorMode}
+          className={`max-w-[1215px] w-[90%]`}
         />
 
         <SectionWrapper>

@@ -13,6 +13,7 @@ function TeamHome({ colorMode }) {
         <SectionHeaderNovo
           miniTitle={content.texts.team.miniTag}
           title={content.texts.team.title}
+          subtitle={content.texts.team.subtitle}
           colorMode={colorMode}
           className={`max-w-[1215px] w-[90%]`}
         />
