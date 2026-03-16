@@ -59,13 +59,13 @@ function Contato({ colorMode, social }) {
   });
 
   return (
-    <div id="contencioso">
+    <div id="">
       <section className="relative min-h-[250px] h-[47vh] max-h-[405px] flex flex-col items-center justify-center overflow-hidden w-full">
         <div className="absolute inset-0 z-0">
           <img
             src={bgImg}
             alt="Cityscape"
-            className="w-full h-full object-cover object-top"
+            className="w-full h-full object-cover object-center"
           />
           {/* <div className="absolute inset-0 bg-[#0f2a3a]/40 mix-blend-multiply" />
           <div className="absolute inset-0 bg-gradient-to-t from-[#0f2a3a] via-transparent to-transparent" /> */}
