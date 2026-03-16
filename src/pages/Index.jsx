@@ -1,4 +1,4 @@
-import { lazy, Suspense } from "react";
+import { lazy, Suspense, useEffect } from "react";
 // Lazy — abaixo da dobra
 import { ColorModeProvider } from "../context/UseContextArchive";
 import { useColorMode } from "../context/UseContextArchive";
@@ -14,6 +14,10 @@ import ContatoHome from "./Institucional/ContatoHome";
 
 export default function Index() {
   const { colorMode, setColorMode } = useColorMode();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <>

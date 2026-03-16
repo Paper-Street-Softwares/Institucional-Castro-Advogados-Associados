@@ -98,6 +98,10 @@ function Navbar() {
           <div className="w-[45%] phone3:max-w-[158px] py-2 tablet2:w-[20%] desktop1:w-[20%] ">
             <Link to="/">
               <img
+                onClick={() => {
+                  window.location.reload();
+                  window.scrollTo(0, 0);
+                }}
                 src={content.texts.navbar.logo.img}
                 alt={content.texts.navbar.logo.alt}
                 className="w-full"
