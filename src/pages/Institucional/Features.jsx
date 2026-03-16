@@ -25,10 +25,7 @@ function Features({ colorMode }) {
           <div className="grid tablet1:grid-cols-2 gap-6">
             {features.map((feature, idx) => (
               <MotionDivDownToUp>
-                <div
-                  key={idx}
-                  className={`group p-6 rounded-xl bg-neutral-50 hover:scale-105 transition-all duration-700`}
-                >
+                <div key={idx} className={`group p-6 rounded-xl bg-neutral-50`}>
                   <div
                     className={`w-10 h-10 rounded-full text-primaryLight mb-4 flex items-center justify-center shadow-md transition-transform`}
                   >

@@ -14,7 +14,7 @@ function Hero({ colorMode }) {
     <SectionArea className={``} paddingTopAndBottom={false}>
       <section
         id="/"
-        className="relative min-h-[500px] max-h-[750px] flex flex-col items-center justify-center overflow-hidden w-full"
+        className="relative min-h-[550px] max-h-[750px] flex flex-col items-center justify-center overflow-hidden w-full"
       >
         <div className="absolute inset-0 z-0">
           {" "}
@@ -38,7 +38,7 @@ function Hero({ colorMode }) {
               colorMode={colorMode}
               miniTitle={content.texts.hero.miniTag}
               title={
-                <h1 className="w-fit mx-auto text-[29px] desktop2:text-[50px] font-mainFont leading-8 desktop2:leading-[44px] text-white font-medium drop-shadow-lg">
+                <h1 className="w-fit mx-auto text-[29px] desktop2:text-[50px] font-mainFont leading-10 text-white font-medium drop-shadow-lg">
                   {content.texts.hero.FirstPart}
                   <br />
                   {content.texts.hero.Destaque}
