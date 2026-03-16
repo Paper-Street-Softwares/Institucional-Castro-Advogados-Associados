@@ -45,8 +45,8 @@ function ContatoHome({ colorMode }) {
     <SectionArea className={`relative z-0 ${backgroundMode}`}>
       {/* Fundo decorativo */}
       <SectionWrapper className="">
-        <section className="relative text-center">
-          <MotionDivDownToUp className="container mx-auto">
+        <section className="relative text-center flex flex-col desktop1:flex-row gap-4 items-center">
+          <MotionDivDownToUp className="desktop1:text-left desktop1:max-w-[50%]">
             <span
               className={`font-bold font-secondFont tracking-wider uppercase text-xs mb-2 block ${miniTagCtaDark}`}
             >
@@ -63,7 +63,7 @@ function ContatoHome({ colorMode }) {
               {content.texts.contato.subtitle}
             </p>
 
-            <div className="flex flex-col w-fit justify-center items-center mx-auto">
+            <div className="flex flex-col w-fit justify-center items-center mx-auto desktop1:mx-0">
               <a
                 href={"/contato"}
                 target="_blank"
@@ -75,6 +75,24 @@ function ContatoHome({ colorMode }) {
                   <ArrowRight width={18} />
                 </span>
               </a>
+            </div>
+          </MotionDivDownToUp>
+
+          <MotionDivDownToUp
+            className={`max-w-[1215px] desktop1:max-w-[50%] w-full`}
+          >
+            <div className="mt-8 w-full">
+              <iframe
+                src={content.texts.maps.embedsrc}
+                width="100%"
+                height=""
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Mapa do local da empresa"
+                className="h-[350px] desktop1:h-[420px] rounded-md"
+              ></iframe>
             </div>
           </MotionDivDownToUp>
         </section>
