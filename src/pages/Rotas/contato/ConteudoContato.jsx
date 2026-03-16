@@ -60,8 +60,7 @@ function Contato({ colorMode }) {
 
   return (
     <div id="contencioso">
-      <section className="relative min-h-[500px] h-[47vh] max-h-[405px] desktop2:min-h-[700px] flex flex-col items-center justify-center overflow-hidden w-full">
-        {" "}
+      <section className="relative min-h-[250px] h-[47vh] max-h-[405px] flex flex-col items-center justify-center overflow-hidden w-full">
         <div className="absolute inset-0 z-0">
           <img
             src={bgImg}
@@ -71,14 +70,14 @@ function Contato({ colorMode }) {
           {/* <div className="absolute inset-0 bg-[#0f2a3a]/40 mix-blend-multiply" />
           <div className="absolute inset-0 bg-gradient-to-t from-[#0f2a3a] via-transparent to-transparent" /> */}
         </div>
-        <MotionDivDownToUp className="z-10 w-full flex justify-center absolute bottom-10">
+        <MotionDivDownToUp className="z-10 w-full flex justify-center absolute bottom-6">
           <div>
             <ScrollMouse />
           </div>
         </MotionDivDownToUp>
       </section>
 
-      <SectionArea className={`bg-secondary`}>
+      <SectionArea className={`bg-white`}>
         <SectionWrapper>
           <MotionDivDownToUp className={`w-full`}>
             <div className="font-mainFont flex flex-col tablet2:flex-row gap-4 w-full tablet2:justify-around">
@@ -130,7 +129,7 @@ function Contato({ colorMode }) {
           </MotionDivDownToUp>
         </SectionWrapper>
 
-        <MotionDivDownToUp className={`w-[90%] mt-10`}>
+        <MotionDivDownToUp className={`max-w-[1215px] w-[90%] mt-10`}>
           <div className="mt-8 w-full">
             <iframe
               src={content.texts.maps.embedsrc}

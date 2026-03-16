@@ -6,7 +6,7 @@ export function AlternatingSection({
 }) {
   const colors = {
     light: ["bg-white", "bg-neutral-50"],
-    defaultDark: ["bg-white", "bg-secondary"],
+    defaultDark: ["bg-white", "bg-white"],
     defaultLight: [
       "bg-[color-mix(in_srgb,var(--primaryDark),black_30%)]",
       "bg-primaryDark",

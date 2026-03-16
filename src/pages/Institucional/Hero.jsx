@@ -14,7 +14,7 @@ function Hero({ colorMode }) {
     <SectionArea className={``} paddingTopAndBottom={false}>
       <section
         id="/"
-        className="relative min-h-[700px] max-h-[750px] flex flex-col items-center justify-center overflow-hidden w-full"
+        className="relative min-h-[500px] max-h-[750px] flex flex-col items-center justify-center overflow-hidden w-full"
       >
         <div className="absolute inset-0 z-0">
           {" "}
@@ -46,11 +46,10 @@ function Hero({ colorMode }) {
                   {content.texts.hero.SecondPart}
                 </h1>
               }
-              subtitle={content.texts.hero.subtitle}
             />
           </motion.div>
         </div>
-        <MotionDivDownToUp className="z-10 w-full flex justify-center mb-10">
+        <MotionDivDownToUp className="z-10 w-full flex justify-center absolute bottom-6">
           <div>
             <ScrollMouse />
           </div>

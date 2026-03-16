@@ -12,7 +12,7 @@ export default function WordPressBlogCard({
 
   switch (colorMode) {
     case "light":
-      colorBg = "bg-terciary";
+      colorBg = "bg-neutral-50";
       colorText = "text-corTitulosPreto";
       colorTextOpacity = "text-corOutrosTextosPreto";
       break;
@@ -23,14 +23,14 @@ export default function WordPressBlogCard({
 
       break;
     case "defaultDark":
-      colorBg = "bg-terciary";
+      colorBg = "bg-neutral-50";
       colorText = "text-corTitulosPreto";
       colorTextOpacity = "text-corOutrosTextosPreto";
       break;
       break;
 
     case "defaultLight":
-      colorBg = "bg-terciary";
+      colorBg = "bg-neutral-50";
       colorText = "text-corTitulosPreto";
       colorTextOpacity = "text-corOutrosTextosPreto";
   }

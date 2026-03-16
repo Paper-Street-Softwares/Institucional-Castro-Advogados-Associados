@@ -41,10 +41,10 @@ export default function InventarioComparativo({ colorMode }) {
 
       break;
     case "defaultDark":
-      backgroundMode = "bg-secondary/60";
+      backgroundMode = "bg-white/60";
       text = "text-corTitulosBranca";
       textOpacity = "text-corOutrosTextosBranca";
-      backgroundMode = "bg-secondary/60";
+      backgroundMode = "bg-white/60";
       stepNumberBg = "bg-white";
       stepNumberText = "text-primaryDark";
       lineColor = "bg-primaryDark/20";

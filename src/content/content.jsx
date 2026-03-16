@@ -401,8 +401,8 @@ const content = {
       },
     },
     team: {
-      miniTag: <></>,
-      title: <>Nossa Equipe</>,
+      miniTag: <>Nossa Equipe</>,
+      title: <>Profissionais dedicados à defesa dos seus direitos</>,
       subtitle: (
         <>
           Profissionais para oferecer orientação jurídica e estratégica na
@@ -415,6 +415,7 @@ const content = {
           img: team1,
           name: <>Dra. Geovana Castro da Costa</>,
           role: <>OAB/MT 27.016/O</>,
+          rota: "/team",
           description: (
             <>
               Dra. Geovana Castro da Costa é advogada dedicada à atuação
@@ -451,6 +452,7 @@ const content = {
           img: team2,
           name: <>Dra. Thanielly Castro Ramos</>,
           role: <>OAB/MT 27.913/O</>,
+          rota: "/team",
           description: (
             <>
               Dra. Thanielly Castro Ramos é advogada comprometida com a

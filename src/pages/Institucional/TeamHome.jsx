@@ -7,8 +7,9 @@ import MotionDivDownToUp from "../../components/animation/MotionDivDownToUp";
 import content from "../../content/content";
 
 function TeamHome({ colorMode }) {
+  const listMembers = Object.values(content.texts.team.cards);
   return (
-    <SectionArea className={`bg-terciary`}>
+    <SectionArea className={`bg-neutral-50`}>
       <SectionWrapper>
         <SectionHeaderNovo
           miniTitle={content.texts.team.miniTag}
@@ -19,23 +20,19 @@ function TeamHome({ colorMode }) {
         />
         <div className="mx-auto md:px-0 ">
           <div className="grid tablet1:grid-cols-2 justify-center items-start flex-wrap gap-6 tablet2:gap-4 desktop1:gap-2">
-            <MotionDivDownToUp>
-              <TeamMember
-                img={content.texts.team.cards.card1.img}
-                name={content.texts.team.cards.card1.name}
-                role={content.texts.team.cards.card1.role}
-                linkedIn={content.texts.team.cards.card1.linkedIn}
-              />
-            </MotionDivDownToUp>
-
-            <MotionDivDownToUp>
-              <TeamMember
-                img={content.texts.team.cards.card2.img}
-                name={content.texts.team.cards.card2.name}
-                role={content.texts.team.cards.card2.role}
-                linkedIn={content.texts.team.cards.card2.linkedIn}
-              />
-            </MotionDivDownToUp>
+            {listMembers.map((item, index) => (
+              <MotionDivDownToUp key={index}>
+                <TeamMember
+                  modal={false}
+                  img={item.img}
+                  rota={item.rota}
+                  name={item.name}
+                  role={item.role}
+                  linkedIn={item.linkedIn}
+                  description={item.description}
+                />
+              </MotionDivDownToUp>
+            ))}
           </div>
         </div>
       </SectionWrapper>

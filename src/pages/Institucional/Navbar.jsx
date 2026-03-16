@@ -90,9 +90,9 @@ function Navbar() {
 
   return (
     <div
-      className={`bg-terciary fixed w-full z-50 ${mobileOpen ? "" : " border-b-2 border-[#C03D1A]"} `}
+      className={`bg-neutral-50 fixed w-full z-50 ${mobileOpen ? "" : " border-b-2 border-[#C03D1A]"} `}
     >
-      <div className="max-w-[1215px] mx-auto px-4 ">
+      <div className="max-w-[1215px] w-[90%] mx-auto">
         <div className="flex items-center justify-between pt-2 desktop1:py-2">
           {/* LOGO */}
           <div className="w-[45%] phone3:max-w-[158px] py-2 tablet2:w-[20%] desktop1:w-[20%] ">
@@ -127,7 +127,7 @@ function Navbar() {
               </button>
 
               <div
-                className={`absolute top-full left-0 mt-4 bg-terciary uppercase text-text-primaryDark shadow-xl w-auto py-3 transition-all duration-300 ${
+                className={`absolute top-full left-0 mt-4 bg-neutral-50 uppercase text-text-primaryDark shadow-xl w-auto py-3 transition-all duration-300 ${
                   openDropdown === "escritorio"
                     ? "opacity-100 visible"
                     : "opacity-0 invisible"
@@ -175,7 +175,7 @@ function Navbar() {
               </button>
 
               <div
-                className={`absolute top-full left-0 mt-4 bg-terciary text-text-primaryDark shadow-xl w-auto py-3 transition-all duration-300 normal-case ${
+                className={`absolute top-full left-0 mt-4 bg-neutral-50 text-text-primaryDark shadow-xl w-auto py-3 transition-all duration-300 normal-case ${
                   openDropdown === "areas"
                     ? "opacity-100 visible"
                     : "opacity-0 invisible"
@@ -222,7 +222,7 @@ function Navbar() {
 
       {/* MOBILE MENU */}
       <div
-        className={`xl:hidden bg-terciary text-primaryDark px-6 text-sm space-y-4 font-medium
+        className={`xl:hidden bg-neutral-50 text-primaryDark px-6 text-sm space-y-4 font-medium
   transition-all duration-300 ease-out transform origin-top mt-4
   ${
     mobileOpen

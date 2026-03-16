@@ -21,7 +21,7 @@ export function Diferences({ colorMode }) {
       textDestaque = "text-primaryLight";
       bgCards = "bg-white shadow";
       borderSVG = "border-primaryLight";
-      bgContainer = "bg-terciary";
+      bgContainer = "bg-neutral-50";
       break;
 
     case "dark":
@@ -41,7 +41,7 @@ export function Diferences({ colorMode }) {
       textDestaque = "text-primaryLight";
       bgCards = "bg-white shadow";
       borderSVG = "border-primaryLight";
-      bgContainer = "bg-terciary";
+      bgContainer = "bg-neutral-50";
       break;
 
     case "defaultLight":

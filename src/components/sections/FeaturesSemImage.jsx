@@ -11,7 +11,7 @@ function FeaturesSemImage({ colorMode }) {
 
   switch (colorMode) {
     case "light":
-      backgroundMode = "bg-secondary/60";
+      backgroundMode = "bg-white/60";
       text = "text-corTitulosPreto";
       textOpacity = "text-corOutrosTextosPreto";
       textDestaque = "text-primaryLight";
@@ -25,7 +25,7 @@ function FeaturesSemImage({ colorMode }) {
 
       break;
     case "defaultDark":
-      backgroundMode = "bg-secondary";
+      backgroundMode = "bg-white";
       text = "text-corTitulosBranca";
       textOpacity = "text-corOutrosTextosBranca";
       textDestaque = "text-primaryDark";

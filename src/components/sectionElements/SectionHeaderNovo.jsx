@@ -85,7 +85,7 @@ function SectionHeaderNovo({
 
         {title && (
           <h2
-            className={`text-3xl md:text-3xl font-mainFont font-medium${text}`}
+            className={`text-3xl md:text-3xl font-mainFont font-bold ${text}`}
           >
             {title} <span className={`italic ${textDestaque}`}>{destaque}</span>{" "}
             {secondPart}
@@ -93,9 +93,7 @@ function SectionHeaderNovo({
         )}
 
         {subtitle && (
-          <p
-            className={`font-secondFont font-light mt-4 opacity-60 ${textOpacity}`}
-          >
+          <p className={`font-secondFont font-light mt-4 ${textOpacity}`}>
             {subtitle}
           </p>
         )}

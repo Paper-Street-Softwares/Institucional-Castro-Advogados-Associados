@@ -8,7 +8,7 @@ import MotionDivDownToUp from "../animation/MotionDivDownToUp";
 
 function FormNovoTemplate({ colorMode }) {
   return (
-    <SectionArea className={`bg-secondary`}>
+    <SectionArea className={`bg-white`}>
       <SectionWrapper>
         <SectionHeaderNovo
           miniTitle={content.texts.form.minitag}

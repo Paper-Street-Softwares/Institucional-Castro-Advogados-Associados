@@ -14,7 +14,7 @@ function Emergency({ colorMode }) {
     textSvg;
   switch (colorMode) {
     case "light":
-      backgroundMode = "bg-secondary";
+      backgroundMode = "bg-white";
       text = "text-corTitulosPreto";
       textOpacity = "text-corOutrosTextosPreto";
       textDestaque = "text-primaryDark";
@@ -24,7 +24,7 @@ function Emergency({ colorMode }) {
 
       break;
     case "dark":
-      backgroundMode = "bg-secondary";
+      backgroundMode = "bg-white";
       text = "text-corTitulosPreto";
       textOpacity = "text-corOutrosTextosPreto";
       textDestaque = "text-primaryDark";
@@ -34,7 +34,7 @@ function Emergency({ colorMode }) {
 
       break;
     case "defaultDark":
-      backgroundMode = "bg-secondary";
+      backgroundMode = "bg-white";
       text = "text-corTitulosPreto";
       textOpacity = "text-corOutrosTextosPreto";
       textDestaque = "text-primaryDark";
@@ -43,7 +43,7 @@ function Emergency({ colorMode }) {
       textSvg = "text-red-800 ";
       break;
     case "defaultLight":
-      backgroundMode = "bg-secondary";
+      backgroundMode = "bg-white";
       text = "text-corTitulosPreto";
       textOpacity = "text-corOutrosTextosPreto";
       textDestaque = "text-primaryDark";

@@ -12,7 +12,7 @@ function About({ colorMode }) {
   const navigate = useNavigate();
 
   return (
-    <SectionArea className={`bg-terciary`}>
+    <SectionArea className={`bg-neutral-50`}>
       <SectionWrapper>
         <div className="flex flex-col desktop1:flex-row gap-8 desktop1:justify-around">
           <MotionDivDownToUp>
@@ -43,7 +43,7 @@ function About({ colorMode }) {
             <MotionDivDownToUp>
               <button
                 onClick={() => navigate("/about")}
-                className="flex gap-2 font-secondFont mt-4 cursor-pointer hover:scale-90 duration-500 transition-all"
+                className="text-primaryLight text-sm hover:scale-90 transition-all duration-500 cursor-pointer mt-6 flex w-fit gap-2 items-center"
               >
                 <span>
                   <ArrowRight width={18} />

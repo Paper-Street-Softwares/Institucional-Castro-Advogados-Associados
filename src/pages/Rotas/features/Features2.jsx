@@ -12,7 +12,7 @@ function Features2({ colorMode }) {
   });
   return (
     <div id="formativoeducacional">
-      <section className="relative min-h-[400px] h-[47vh] max-h-[405px] desktop2:min-h-[700px]  flex flex-col items-center justify-center overflow-hidden w-full">
+      <section className="relative min-h-[200px] h-[47vh] max-h-[405px] flex flex-col items-center justify-center overflow-hidden w-full">
         <div className="absolute inset-0 z-0">
           <img
             src={content.texts.features.cards.card2.imgFeatures2}
@@ -23,7 +23,7 @@ function Features2({ colorMode }) {
           <div className="absolute inset-0 bg-gradient-to-t from-[#0f2a3a] via-transparent to-transparent" /> */}
         </div>
 
-        <MotionDivDownToUp className="z-10 w-full flex justify-center absolute bottom-10">
+        <MotionDivDownToUp className="z-10 w-full flex justify-center absolute bottom-6">
           <div>
             <ScrollMouse />
           </div>

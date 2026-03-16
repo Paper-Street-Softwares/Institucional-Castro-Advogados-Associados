@@ -29,7 +29,7 @@ function Cards({ colorMode }) {
       iconContainer = " bg-white shadow text-primaryDark";
       textDestaque = "text-primaryDark";
       borderT = "border-t-primaryDark";
-      bgCards = "bg-terciary";
+      bgCards = "bg-neutral-50";
       break;
 
     case "dark":
@@ -51,7 +51,7 @@ function Cards({ colorMode }) {
       iconContainer = " bg-white shadow text-primaryDark";
       textDestaque = "text-primaryDark";
       borderT = "border-t-primaryDark";
-      bgCards = "bg-terciary";
+      bgCards = "bg-neutral-50";
       break;
 
     case "defaultLight":

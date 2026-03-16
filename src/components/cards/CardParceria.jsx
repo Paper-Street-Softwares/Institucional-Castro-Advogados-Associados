@@ -6,7 +6,7 @@ function ParceriaCard({ img, alt, text, name, role, colorMode }) {
     case "light":
       titleColor = "text-corTitulosPreto";
       descrptionColor = "text-corOutrosTextosPreto";
-      bgCard = "bg-terciary";
+      bgCard = "bg-neutral-50";
       break;
 
     case "dark":

@@ -45,7 +45,7 @@ function HeroTemplateNovo({
   switch (colorMode) {
     case "light":
       backgroundMode = "bg-transparent";
-      bgFaixaHero = "bg-terciary";
+      bgFaixaHero = "bg-neutral-50";
       text = "text-corTitulosPreto";
       textOpacity = "text-corOutrosTextosPreto";
       textDestaque = "text-primaryDark";
@@ -84,7 +84,7 @@ function HeroTemplateNovo({
 
     case "defaultLight":
       backgroundMode = "bg-transparent";
-      bgFaixaHero = "bg-terciary";
+      bgFaixaHero = "bg-neutral-50";
       text = "text-corTitulosPreto";
       textOpacity = "text-corOutrosTextosPreto";
       textDestaque = "text-primaryDark";

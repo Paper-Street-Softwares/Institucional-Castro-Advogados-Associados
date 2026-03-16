@@ -41,7 +41,7 @@ function ConteudoAbout({ colorMode, social }) {
     <div>
       <section
         id="home"
-        className="font-mainFont relative min-h-[500px] h-[47vh] max-h-[405px] desktop2:min-h-[700px] flex flex-col items-center justify-center overflow-hidden w-full"
+        className="font-mainFont relative min-h-[250px] h-[40vh] max-h-[405px] flex flex-col items-center justify-center overflow-hidden w-full"
       >
         <div className="absolute inset-0 z-0">
           <img
@@ -51,14 +51,14 @@ function ConteudoAbout({ colorMode, social }) {
           />
         </div>
 
-        <MotionDivDownToUp className="z-10 w-full flex justify-center absolute bottom-10">
+        <MotionDivDownToUp className="z-10 w-full flex justify-center absolute bottom-6">
           <div>
             <ScrollMouse />
           </div>
         </MotionDivDownToUp>
       </section>
 
-      <SectionArea className={`bg-secondary`} paddingbot={true}>
+      <SectionArea className={`bg-white`} paddingbot={true}>
         <div className="flex flex-col gap-20">
           <div className="relative w-[90%] max-w-7xl mx-auto flex flex-col tablet2:flex-row gap-14">
             <MotionDivDownToUp className={`w-full`}>

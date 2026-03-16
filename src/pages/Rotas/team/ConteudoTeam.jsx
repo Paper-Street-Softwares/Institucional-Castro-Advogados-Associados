@@ -19,15 +19,15 @@ function ConteudoTeam({ colorMode, parceirosSection }) {
     setVisible(true);
   };
 
-  const instituicoesAtendidas = Object.values(
-    content.texts.team.instituicoesAtendidas,
-  );
-  const parceiros = Object.values(content.texts.team.parceirosLogo);
-  const clientes = Object.values(content.texts.team.clientesLogo);
+  // const instituicoesAtendidas = Object.values(
+  //   content.texts.team.instituicoesAtendidas,
+  // );
+  // const parceiros = Object.values(content.texts.team.parceirosLogo);
+  // const clientes = Object.values(content.texts.team.clientesLogo);
 
   return (
     <div>
-      <section className="relative min-h-[500px] h-[47vh] max-h-[405px] desktop2:min-h-[700px] flex flex-col items-center justify-center overflow-hidden w-full">
+      <section className="relative min-h-[250px] h-[47vh] max-h-[405px] flex flex-col items-center justify-center overflow-hidden w-full">
         <div className="absolute inset-0 z-0">
           <img
             src={content.texts.team.imgFundo}
@@ -36,14 +36,14 @@ function ConteudoTeam({ colorMode, parceirosSection }) {
           />
         </div>
 
-        <MotionDivDownToUp className="z-10 w-full flex justify-center absolute bottom-10">
+        <MotionDivDownToUp className="z-10 w-full flex justify-center absolute bottom-6">
           <div>
             <ScrollMouse />
           </div>
         </MotionDivDownToUp>
       </section>
 
-      <SectionArea className={`bg-secondary`}>
+      <SectionArea className={`bg-white`}>
         <SectionHeaderNovo
           title={content.texts.team.title}
           subtitle={content.texts.team.subtitle}
@@ -80,8 +80,8 @@ function ConteudoTeam({ colorMode, parceirosSection }) {
         </SectionWrapper>
       </SectionArea>
 
-      {parceirosSection && (
-        <SectionArea className={`bg-secondary`}>
+      {/* {parceirosSection && (
+        <SectionArea className={`bg-white`}>
           <SectionWrapper>
             <SectionHeaderNovo
               colorMode={colorMode}
@@ -89,7 +89,6 @@ function ConteudoTeam({ colorMode, parceirosSection }) {
             />
 
             <div className="flex flex-col gap-14">
-              {/* Clientes */}
               <div className="mx-auto">
                 <SectionHeaderNovo
                   title={content.texts.team.titleClientes}
@@ -109,7 +108,7 @@ function ConteudoTeam({ colorMode, parceirosSection }) {
                   ))}
                 </div>
               </div>
-              {/* Parceiros */}
+
               <div className="mx-auto">
                 <SectionHeaderNovo
                   title={content.texts.team.titleParceiros}
@@ -130,7 +129,6 @@ function ConteudoTeam({ colorMode, parceirosSection }) {
                 </div>
               </div>
 
-              {/* Instituições */}
               <div className="mx-auto">
                 <SectionHeaderNovo
                   title={content.texts.team.titleInstituicoes}
@@ -153,13 +151,13 @@ function ConteudoTeam({ colorMode, parceirosSection }) {
             </div>
           </SectionWrapper>
         </SectionArea>
-      )}
+      )} */}
 
       <Dialog
         header="Saiba mais"
         visible={visible}
         onHide={() => setVisible(false)}
-        style={{ width: "30vw" }}
+        style={{ width: "641px" }}
         breakpoints={{ "960px": "75vw", "641px": "90vw" }}
       >
         <p className="m-0">{selectedDescription}</p>

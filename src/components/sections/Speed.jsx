@@ -17,7 +17,7 @@ function Speed({ colorMode }) {
     iconBg;
   switch (colorMode) {
     case "light":
-      bgContainer = "bg-terciary";
+      bgContainer = "bg-neutral-50";
       text = "text-corTitulosPreto";
       textOpacity = "text-corOutrosTextosPreto";
       iconBg = "bg-white text-primaryDark";
@@ -31,7 +31,7 @@ function Speed({ colorMode }) {
       break;
 
     case "defaultDark":
-      bgContainer = "bg-terciary";
+      bgContainer = "bg-neutral-50";
       text = "text-corTitulosPreto";
       textOpacity = "text-corOutrosTextosPreto";
       iconBg = "bg-white text-primaryDark";

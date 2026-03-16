@@ -13,7 +13,7 @@ function Authority({ colorMode }) {
 
   switch (colorMode) {
     case "light":
-      backgroundMode = "bg-secondary/60";
+      backgroundMode = "bg-white/60";
       text = "text-corTitulosPreto";
       textOpacity = "text-corOutrosTextosPreto";
       textDestaque = "text-primaryDark";
@@ -25,7 +25,7 @@ function Authority({ colorMode }) {
       textDestaque = "text-primaryDark";
       break;
     case "defaultDark":
-      backgroundMode = "bg-secondary/60";
+      backgroundMode = "bg-white/60";
       text = "text-corTitulosBranca";
       textOpacity = "text-corOutrosTextosBranca";
       textDestaque = "text-primaryDark";
