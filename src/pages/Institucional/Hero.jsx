@@ -38,7 +38,7 @@ function Hero({ colorMode }) {
               colorMode={colorMode}
               miniTitle={content.texts.hero.miniTag}
               title={
-                <h1 className="w-fit mx-auto text-[29px] desktop2:text-[50px] font-mainFont leading-10 text-white font-medium drop-shadow-lg">
+                <h1 className="w-fit mx-auto text-[29px] desktop2:text-[50px] font-mainFont leading-10 desktop1:leading-[60px] text-white font-medium drop-shadow-lg">
                   {content.texts.hero.FirstPart}
                   <br />
                   {content.texts.hero.Destaque}

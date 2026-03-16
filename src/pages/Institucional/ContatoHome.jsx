@@ -53,7 +53,7 @@ function ContatoHome({ colorMode }) {
               {content.texts.contato.minitag}
             </span>
             <h2
-              className={`text-4xl md:text-[48px] leading-[48px] font-mainFont font-light mb-6 ${text}`}
+              className={`text-4xl md:text-[48px] leading-[48px] font-mainFont font-bold mb-6 ${text}`}
             >
               {content.texts.contato.title}
             </h2>
