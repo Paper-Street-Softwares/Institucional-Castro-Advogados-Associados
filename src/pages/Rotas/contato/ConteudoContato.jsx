@@ -16,7 +16,7 @@ import SectionWrapper from "../../../components/sectionElements/SectionWrapper";
 import content from "../../../content/content";
 import MotionDivDownToUp from "../../../components/animation/MotionDivDownToUp";
 
-function Contato({ colorMode }) {
+function Contato({ colorMode, social }) {
   const linksContato = {
     link1: {
       icon: (
@@ -107,23 +107,25 @@ function Contato({ colorMode }) {
                       </div>
                     ))}
                 </div>
-                <div className="flex gap-4">
-                  <a
-                    href={content.texts.links.instagram}
-                    target="_blank"
-                    className="bg-primaryDark/20 flex justify-center items-center w-8 h-8 rounded-md cursor-pointer hover:scale-90 duration-500 transition-all"
-                  >
-                    {" "}
-                    <Instagram width={20} className="text-primaryDark/70" />
-                  </a>
-                  <a
-                    href={content.texts.links.linkedin}
-                    target="_blank"
-                    className="bg-primaryDark/20 flex justify-center items-center w-8 h-8 rounded-md cursor-pointer hover:scale-90 duration-500 transition-all"
-                  >
-                    <Linkedin width={20} className="text-primaryDark/70" />
-                  </a>
-                </div>
+                {social && (
+                  <div className="flex gap-4">
+                    <a
+                      href={content.texts.links.instagram}
+                      target="_blank"
+                      className="bg-primaryDark/20 flex justify-center items-center w-8 h-8 rounded-md cursor-pointer hover:scale-90 duration-500 transition-all"
+                    >
+                      {" "}
+                      <Instagram width={20} className="text-primaryDark/70" />
+                    </a>
+                    <a
+                      href={content.texts.links.linkedin}
+                      target="_blank"
+                      className="bg-primaryDark/20 flex justify-center items-center w-8 h-8 rounded-md cursor-pointer hover:scale-90 duration-500 transition-all"
+                    >
+                      <Linkedin width={20} className="text-primaryDark/70" />
+                    </a>
+                  </div>
+                )}
               </div>
             </div>
           </MotionDivDownToUp>

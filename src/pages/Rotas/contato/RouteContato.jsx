@@ -7,7 +7,7 @@ function RouteContato({ colorMode }) {
   return (
     <>
       <Navbar />
-      <Contato colorMode={colorMode} />
+      <Contato social={false} colorMode={colorMode} />
       <Footer phone={true} sociais={false} adress={true} expedient={true} />
     </>
   );

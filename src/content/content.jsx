@@ -95,7 +95,7 @@ export const infos = {
   instagramProfile: "", // Sem o @
   instagramProfileSecundario: "",
   facebookProfile: "",
-  linkeDinProfile: "planitur",
+  linkeDinProfile: "",
   x: "",
   tiktokProfile: "",
   youtubeProfile: "",

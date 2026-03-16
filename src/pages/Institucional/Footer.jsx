@@ -29,7 +29,7 @@ export default function Footer({
 
               {sociais && (
                 <div className="flex flex-col gap-4">
-                  <h1 className="font-secondFont">Siga a PLANITUR</h1>
+                  <h1 className="font-secondFont">Siga-nos na Rede Social</h1>
 
                   <div className="flex gap-4">
                     <a
