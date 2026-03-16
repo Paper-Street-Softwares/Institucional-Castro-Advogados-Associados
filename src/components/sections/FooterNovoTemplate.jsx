@@ -270,11 +270,7 @@ function FooterNovoTemplate({
                   Políticas de privacidade
                 </button>{" "}
                 - Desenvolvido com excelência por{" "}
-                <a
-                  target="_blank"
-                  href="https://paperstreet.com.br"
-                  className="underline"
-                >
+                <a href="https://paperstreet.com.br" className="underline">
                   Paper Street
                 </a>
               </div>

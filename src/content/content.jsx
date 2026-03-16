@@ -13,6 +13,7 @@ import imgFeatures2 from "../assets/imgs/features/rotas/features2.webp";
 
 //Imports About
 import aboutImg from "../assets/imgs/about/aboutImg.webp";
+import aboutImgMobile from "../assets/imgs/about/aboutImgMobile.webp";
 import aboutImgBg from "../assets/imgs/about/rotaAbout/bgAbout.webp";
 import aboutSocialImg from "../assets/imgs/about/aboutSocial.webp";
 
@@ -384,7 +385,7 @@ const content = {
           <br />
           Com experiência na condução de divórcios realizados de forma digital,
           o processo pode ser iniciado e acompanhado sem necessidade de
-          deslocamentos ou burocracias desnecessárias. A estrutura digital
+          deslocamentos ou burocracias desnecessárias.
         </>
       ),
       img: imgApresentation,
@@ -405,6 +406,7 @@ const content = {
     about: {
       imagem: {
         img: aboutImg,
+        imgMobile: aboutImgMobile,
         alt: "Imagem ilustrativa da Seção Sobre",
       },
       miniTag: <>Castro Advogados Associados</>,

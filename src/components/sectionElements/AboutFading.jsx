@@ -2,9 +2,9 @@ import content from "../../content/content";
 
 export default function AboutFading() {
   return (
-    <div className="relative font-secondFont text-paragraph4 text-paragraphLight overflow-hidden opacity-60 text-corOutrosTextosPreto">
+    <div className="relative font-secondFont text-paragraph4 text-paragraphLight overflow-hidden text-corOutrosTextosPreto">
       {content.texts.apresentation.paragraph}
-      <div className="bottom-0 absolute w-full h-[80px] bg-gradient-to-b from-transparent to-neutral-50"></div>
+      <div className="bottom-0 absolute w-full h-[80px] bg-gradient-to-b from-transparent to-transparent"></div>
     </div>
   );
 }

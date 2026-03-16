@@ -68,7 +68,6 @@ function ContatoHome({ colorMode }) {
             <div className="flex flex-col w-fit justify-center items-center mx-auto desktop1:mx-0">
               <a
                 href={"/contato"}
-                target="_blank"
                 rel="noopener noreferrer"
                 className="text-primaryLight text-sm hover:scale-90 transition-all duration-500 cursor-pointer mt-6 flex w-fit gap-2 items-center"
               >

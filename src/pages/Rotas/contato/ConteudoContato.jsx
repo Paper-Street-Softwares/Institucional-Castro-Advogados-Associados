@@ -26,11 +26,7 @@ function Contato({ colorMode, social }) {
       ),
       text: (
         <>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href={content.texts.links.ctaWhatsapp}
-          >
+          <a rel="noopener noreferrer" href={content.texts.links.ctaWhatsapp}>
             {content.texts.infos.phone}
           </a>
         </>
@@ -111,7 +107,6 @@ function Contato({ colorMode, social }) {
                   <div className="flex gap-4">
                     <a
                       href={content.texts.links.instagram}
-                      target="_blank"
                       className="bg-primaryDark/20 flex justify-center items-center w-8 h-8 rounded-md cursor-pointer hover:scale-90 duration-500 transition-all"
                     >
                       {" "}
@@ -119,7 +114,6 @@ function Contato({ colorMode, social }) {
                     </a>
                     <a
                       href={content.texts.links.linkedin}
-                      target="_blank"
                       className="bg-primaryDark/20 flex justify-center items-center w-8 h-8 rounded-md cursor-pointer hover:scale-90 duration-500 transition-all"
                     >
                       <Linkedin width={20} className="text-primaryDark/70" />

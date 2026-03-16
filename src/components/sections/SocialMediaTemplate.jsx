@@ -117,7 +117,6 @@ function SocialMediaTemplate({ colorMode }) {
                   {infos?.facebookProfile?.trim() && (
                     <a
                       href={content.texts.links.facebook}
-                      target="_blank"
                       rel="noopener noreferrer"
                       aria-label="Link para o Facebook"
                       className={`group flex items-center gap-6 p-6 rounded-2xl border ${borderCard} hover:shadow-lg transition-all ${cardBg} hover:scale-105 hover:duration-500`}
@@ -146,7 +145,6 @@ function SocialMediaTemplate({ colorMode }) {
                   {infos?.instagramProfile?.trim() && (
                     <a
                       href={content.texts.links.instagram}
-                      target="_blank"
                       rel="noopener noreferrer"
                       aria-label="Link para Instagram"
                       className={`group flex items-center gap-6 p-6 rounded-2xl border ${borderCard} hover:shadow-lg transition-all ${cardBg} hover:scale-105 hover:duration-500`}
@@ -175,7 +173,6 @@ function SocialMediaTemplate({ colorMode }) {
                   {infos?.linkeDinProfile?.trim() && (
                     <a
                       href={content.texts.links.linkedin}
-                      target="_blank"
                       rel="noopener noreferrer"
                       aria-label="Link para o LinkedIn"
                       className={`group flex items-center gap-6 p-6 rounded-2xl border ${borderCard} hover:shadow-lg transition-all ${cardBg} hover:scale-105 hover:duration-500`}
@@ -204,7 +201,6 @@ function SocialMediaTemplate({ colorMode }) {
                   {infos?.instagramProfileSecundario?.trim() && (
                     <a
                       href={content.texts.links.instagramSecundario}
-                      target="_blank"
                       rel="noopener noreferrer"
                       aria-label="Link para Instagram"
                       className={`group flex items-center gap-6 p-6 rounded-2xl border ${borderCard} hover:shadow-lg transition-all ${cardBg} hover:scale-105 hover:duration-500`}
@@ -233,7 +229,6 @@ function SocialMediaTemplate({ colorMode }) {
                   {infos?.tiktokProfile?.trim() && (
                     <a
                       href={content.texts.links.tiktok}
-                      target="_blank"
                       rel="noopener noreferrer"
                       aria-label="Link para TikTok"
                       className={`group flex items-center gap-6 p-6 rounded-2xl border ${borderCard} hover:shadow-lg transition-all ${cardBg} hover:scale-105 hover:duration-500`}
@@ -262,7 +257,6 @@ function SocialMediaTemplate({ colorMode }) {
                   {infos?.youtubeProfile?.trim() && (
                     <a
                       href={content.texts.links.youtube}
-                      target="_blank"
                       rel="noopener noreferrer"
                       aria-label="Link para o YouTube"
                       className={`group flex items-center gap-6 p-6 rounded-2xl border ${borderCard} hover:shadow-lg transition-all ${cardBg} hover:scale-105 hover:duration-500`}

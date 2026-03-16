@@ -77,7 +77,6 @@ export default function TeamMember({
             {linkedIn && (
               <a
                 href={linkedIn}
-                target="_blank"
                 rel="noreferrer"
                 className="mt-4 bg-primaryDark/20 flex justify-center items-center w-8 h-8 rounded-md cursor-pointer hover:scale-90 duration-500 transition-all"
               >
@@ -92,7 +91,6 @@ export default function TeamMember({
       </p>
       {buttonRota && (
         <a
-          target="_blank"
           rel="noopener noreferrer"
           href={rota}
           className="text-primaryLight text-sm hover:scale-90 transition-all duration-500 cursor-pointer mt-6 flex w-fit gap-2 items-center"

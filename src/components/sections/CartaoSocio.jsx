@@ -1,41 +1,40 @@
-import React, { useState } from 'react'
-import { useParams } from 'react-router-dom'
-import { Dialog } from 'primereact/dialog'
-import { X } from 'lucide-react'
-import content from '../../content/content'
-import SalvarContatoButton from '../interactives/Cartao/SalvarContato'
-import CartaoRedeSocial from '../interactives/Cartao/CartaoRedeSocial'
+import React, { useState } from "react";
+import { useParams } from "react-router-dom";
+import { Dialog } from "primereact/dialog";
+import { X } from "lucide-react";
+import content from "../../content/content";
+import SalvarContatoButton from "../interactives/Cartao/SalvarContato";
+import CartaoRedeSocial from "../interactives/Cartao/CartaoRedeSocial";
 
 function CartaoSocio() {
-  const { nome } = useParams() // pega a rota
-  const [visible, setVisible] = useState(false)
-  const [copied, setCopied] = useState(false)
+  const { nome } = useParams(); // pega a rota
+  const [visible, setVisible] = useState(false);
+  const [copied, setCopied] = useState(false);
 
   // Busca o sócio no conteúdo
   const socioKey = Object.keys(content.texts.socios).find((key) => {
-    const socioNome = content.texts.socios[key]?.nome
-    return socioNome?.toLowerCase() === nome?.toLowerCase()
-  })
+    const socioNome = content.texts.socios[key]?.nome;
+    return socioNome?.toLowerCase() === nome?.toLowerCase();
+  });
 
-  if (!socioKey) return <div>Página não localizada</div>
+  if (!socioKey) return <div>Página não localizada</div>;
 
-  const socio = content.texts.socios[socioKey]
-  const url = `${window.location.origin}/${nome.toLowerCase()}`
+  const socio = content.texts.socios[socioKey];
+  const url = `${window.location.origin}/${nome.toLowerCase()}`;
 
   const handleCopy = () => {
-    navigator.clipboard.writeText(url)
-    setCopied(true)
-    setTimeout(() => setCopied(false), 2000)
-  }
+    navigator.clipboard.writeText(url);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
 
   // Conteúdo do modal de compartilhamento
-  const modalTitle = 'Compartilhar'
+  const modalTitle = "Compartilhar";
   const modalContent = (
     <div className="flex flex-col gap-4 font-mainFont">
       <div className="flex flex-wrap gap-3">
         <a
           href={`https://wa.me/?text=${encodeURIComponent(url)}`}
-          target="_blank"
           rel="noreferrer"
           className="px-3 py-1 border rounded bg-green-500 text-white"
         >
@@ -45,7 +44,6 @@ function CartaoSocio() {
           href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(
             url,
           )}`}
-          target="_blank"
           rel="noreferrer"
           className="px-3 py-1 border rounded bg-blue-600 text-white"
         >
@@ -55,7 +53,6 @@ function CartaoSocio() {
           href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(
             url,
           )}`}
-          target="_blank"
           rel="noreferrer"
           className="px-3 py-1 border rounded bg-sky-400 text-white"
         >
@@ -78,39 +75,39 @@ function CartaoSocio() {
           onClick={handleCopy}
           className="px-3 py-1 bg-gray-800 text-white rounded"
         >
-          {copied ? 'Copiado!' : 'Copiar'}
+          {copied ? "Copiado!" : "Copiar"}
         </button>
       </div>
     </div>
-  )
+  );
 
-  let textColor = ''
-  let textSecondary = ''
-  let bgColor = ''
-  let borderColor = ''
+  let textColor = "";
+  let textSecondary = "";
+  let bgColor = "";
+  let borderColor = "";
 
   const themes = {
     dark: {
-      textColor: 'text-white',
-      textSecondary: 'text-white/60',
-      bgColor: 'bg-bgFixedDark',
-      borderColor: 'border-gray-700',
+      textColor: "text-white",
+      textSecondary: "text-white/60",
+      bgColor: "bg-bgFixedDark",
+      borderColor: "border-gray-700",
     },
 
     light: {
-      textColor: 'text-black',
-      textSecondary: '',
-      bgColor: 'bg-bgFixedLight',
-      borderColor: 'border-gray-300',
+      textColor: "text-black",
+      textSecondary: "",
+      bgColor: "bg-bgFixedLight",
+      borderColor: "border-gray-300",
     },
 
     default: {
-      textColor: 'text-white',
-      textSecondary: 'text-white/60',
-      bgColor: 'bg-bgSectionDark',
-      borderColor: 'border-gray-700',
+      textColor: "text-white",
+      textSecondary: "text-white/60",
+      bgColor: "bg-bgSectionDark",
+      borderColor: "border-gray-700",
     },
-  }
+  };
 
   return (
     <div className={`${bgColor} min-h-screen`}>
@@ -246,14 +243,14 @@ function CartaoSocio() {
           header={modalTitle}
           visible={visible}
           onHide={() => setVisible(false)}
-          style={{ width: '50vw' }}
-          breakpoints={{ '4000px': '60vw', '1024px': '70vw', '641px': '85vw' }}
+          style={{ width: "50vw" }}
+          breakpoints={{ "4000px": "60vw", "1024px": "70vw", "641px": "85vw" }}
         >
           {modalContent}
         </Dialog>
       </div>
     </div>
-  )
+  );
 }
 
-export default CartaoSocio
+export default CartaoSocio;

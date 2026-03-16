@@ -235,7 +235,7 @@ function FeaturesNovaTemplate({ colorMode, frasesDestaque, accordion, modal }) {
                                 <div>
                                   <a
                                     href={item.link}
-                                    target="_blank"
+                                    
                                     className="mt-6 text-primaryLight font-secondFont text-sm flex items-center gap-2 cursor-pointer scale-100 hover:scale-95 w-fit duration-500 transition-all"
                                   >
                                     {item.buttonLabel}

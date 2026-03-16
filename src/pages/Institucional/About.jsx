@@ -19,9 +19,15 @@ function About({ colorMode }) {
             <div className="flex justify-center items-center">
               <div className="w-full">
                 <img
+                  src={content.texts.about.imagem.imgMobile}
+                  alt={content.texts.about.imagem.alt}
+                  className="w-[90%] tablet1:w-[95%] tablet2:w-full desktop1:max-w-[428px] mx-auto rounded-md desktop1:hidden"
+                />
+
+                <img
                   src={content.texts.about.imagem.img}
                   alt={content.texts.about.imagem.alt}
-                  className="w-[90%] tablet1:w-[95%] tablet2:w-full desktop1:max-w-[428px] mx-auto rounded-md"
+                  className="w-[90%] tablet1:w-[95%] tablet2:w-full desktop1:max-w-[428px] mx-auto rounded-md hidden desktop1:flex"
                 />
               </div>
             </div>
@@ -42,7 +48,6 @@ function About({ colorMode }) {
 
             <MotionDivDownToUp>
               <a
-                target="_blank"
                 rel="noopener noreferrer"
                 href="/about"
                 className="text-primaryLight text-sm hover:scale-90 transition-all duration-500 cursor-pointer mt-6 flex w-fit gap-2 items-center"

@@ -34,14 +34,12 @@ export default function Footer({
                   <div className="flex gap-4">
                     <a
                       href={content.texts.links.instagram}
-                      target="_blank"
                       className="bg-primaryDark/20 flex justify-center items-center w-8 h-8 rounded-md cursor-pointer hover:scale-90 duration-500 transition-all"
                     >
                       <Instagram width={18} className="text-primaryDark/70" />
                     </a>
                     <a
                       href={content.texts.links.linkedin}
-                      target="_blank"
                       className="bg-primaryDark/20 flex justify-center items-center w-8 h-8 rounded-md cursor-pointer hover:scale-90 duration-500 transition-all"
                     >
                       <Linkedin width={18} className="text-primaryDark/70" />
@@ -60,7 +58,6 @@ export default function Footer({
                 <ul className="space-y-2 text-sm text-primaryDark/80 flex flex-col">
                   <a
                     href="/about"
-                    target="_blank"
                     rel="noopener noreferrer"
                     className="hover:text-primaryLight duration-300 transition-all cursor-pointer"
                   >
@@ -68,7 +65,6 @@ export default function Footer({
                   </a>
                   <a
                     href="/team"
-                    target="_blank"
                     rel="noopener noreferrer"
                     className="hover:text-primaryLight duration-300 transition-all cursor-pointer"
                   >
@@ -76,7 +72,6 @@ export default function Footer({
                   </a>
                   <a
                     href="/contato"
-                    target="_blank"
                     rel="noopener noreferrer"
                     className="hover:text-primaryLight duration-300 transition-all cursor-pointer"
                   >
@@ -118,7 +113,6 @@ export default function Footer({
                   <a
                     key={index}
                     href={item.rota}
-                    target="_blank"
                     rel="noopener noreferrer"
                     className="hover:text-primaryLight duration-300 transition-all cursor-pointer"
                   >

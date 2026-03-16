@@ -1,29 +1,29 @@
-import { Instagram, Linkedin } from 'lucide-react'
-import content from '../../../content/content'
-import emailjs from 'emailjs-com'
-import { useState } from 'react'
+import { Instagram, Linkedin } from "lucide-react";
+import content from "../../../content/content";
+import emailjs from "emailjs-com";
+import { useState } from "react";
 
 export default function ContactForm() {
-  const [name, setName] = useState('')
-  const [phone, setPhone] = useState('')
-  const [email, setEmail] = useState('')
-  const [message, setMessage] = useState('')
-  const [isSubmitting, setIsSubmitting] = useState(false)
-  const [errors, setErrors] = useState({})
+  const [name, setName] = useState("");
+  const [phone, setPhone] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [errors, setErrors] = useState({});
 
   const sendToEmail = () => {
-    setIsSubmitting(true)
-    const validationErrors = {}
+    setIsSubmitting(true);
+    const validationErrors = {};
 
-    if (!name) validationErrors.name = 'O campo Nome é obrigatório.'
-    if (!phone) validationErrors.phone = 'O campo Telefone é obrigatório.'
-    if (!email) validationErrors.email = 'O campo Email é obrigatório.'
-    if (!message) validationErrors.message = 'O campo Mensagem é obrigatório.'
+    if (!name) validationErrors.name = "O campo Nome é obrigatório.";
+    if (!phone) validationErrors.phone = "O campo Telefone é obrigatório.";
+    if (!email) validationErrors.email = "O campo Email é obrigatório.";
+    if (!message) validationErrors.message = "O campo Mensagem é obrigatório.";
 
     if (Object.keys(validationErrors).length > 0) {
-      setErrors(validationErrors)
-      setIsSubmitting(false)
-      return
+      setErrors(validationErrors);
+      setIsSubmitting(false);
+      return;
     }
 
     const templateParams = {
@@ -31,32 +31,32 @@ export default function ContactForm() {
       phone,
       email,
       message,
-    }
+    };
 
     emailjs
       .send(
-        'service_dd91cs4', // substitua pelo seu Service ID
-        'template_7l1ejkm', // substitua pelo seu Template ID
+        "service_dd91cs4", // substitua pelo seu Service ID
+        "template_7l1ejkm", // substitua pelo seu Template ID
         templateParams,
-        'bL24tpiXsEQJ9YhAB', // substitua pela sua Public Key
+        "bL24tpiXsEQJ9YhAB", // substitua pela sua Public Key
       )
       .then(
         () => {
-          alert('Mensagem enviada por email com sucesso!')
-          setIsSubmitting(false)
+          alert("Mensagem enviada por email com sucesso!");
+          setIsSubmitting(false);
           // Limpar campos
-          setName('')
-          setPhone('')
-          setEmail('')
-          setMessage('')
-          setErrors({})
+          setName("");
+          setPhone("");
+          setEmail("");
+          setMessage("");
+          setErrors({});
         },
         (error) => {
-          alert('Erro ao enviar email: ' + error.text)
-          setIsSubmitting(false)
+          alert("Erro ao enviar email: " + error.text);
+          setIsSubmitting(false);
         },
-      )
-  }
+      );
+  };
 
   return (
     <section className="w-full text-white py-16 font-secondFont">
@@ -66,7 +66,7 @@ export default function ContactForm() {
           <form className="space-y-6 w-full max-w-[500px]">
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
               <div>
-                {' '}
+                {" "}
                 <input
                   type="text"
                   placeholder="Nome"
@@ -74,8 +74,8 @@ export default function ContactForm() {
                   id="name"
                   value={name}
                   onChange={(e) => {
-                    const value = e.target.value
-                    setName(value.charAt(0).toUpperCase() + value.slice(1))
+                    const value = e.target.value;
+                    setName(value.charAt(0).toUpperCase() + value.slice(1));
                   }}
                 />
                 {errors.name && (
@@ -84,7 +84,7 @@ export default function ContactForm() {
               </div>
 
               <div>
-                {' '}
+                {" "}
                 <input
                   type="email"
                   placeholder="Email"
@@ -106,27 +106,27 @@ export default function ContactForm() {
                 id="phone"
                 value={phone}
                 onChange={(e) => {
-                  let value = e.target.value
+                  let value = e.target.value;
 
                   // Remove tudo que não seja número
-                  value = value.replace(/\D/g, '')
+                  value = value.replace(/\D/g, "");
 
                   // Limita a 11 dígitos (padrão celular brasileiro)
-                  value = value.substring(0, 11)
+                  value = value.substring(0, 11);
 
                   // Aplica a formatação
                   if (value.length > 6) {
                     value = `(${value.substring(0, 2)}) ${value.substring(
                       2,
                       7,
-                    )}-${value.substring(7)}`
+                    )}-${value.substring(7)}`;
                   } else if (value.length > 2) {
-                    value = `(${value.substring(0, 2)}) ${value.substring(2)}`
+                    value = `(${value.substring(0, 2)}) ${value.substring(2)}`;
                   } else if (value.length > 0) {
-                    value = `(${value}`
+                    value = `(${value}`;
                   }
 
-                  setPhone(value)
+                  setPhone(value);
                 }}
               />
               {errors.phone && (
@@ -142,8 +142,8 @@ export default function ContactForm() {
                 id="message"
                 value={message}
                 onChange={(e) => {
-                  const value = e.target.value
-                  setMessage(value.charAt(0).toUpperCase() + value.slice(1))
+                  const value = e.target.value;
+                  setMessage(value.charAt(0).toUpperCase() + value.slice(1));
                 }}
               />
               {errors.message && (
@@ -186,7 +186,7 @@ export default function ContactForm() {
                 href={content.texts.links.instagram}
                 aria-label="Instagram"
                 className="transition hover:text-pink-500"
-                target="_blank"
+                
                 rel="noopener noreferrer"
               >
                 <Instagram size={22} />
@@ -204,5 +204,5 @@ export default function ContactForm() {
         </div>
       </div>
     </section>
-  )
+  );
 }

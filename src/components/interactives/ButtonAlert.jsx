@@ -9,7 +9,6 @@ export default function ButtonAlert({
 }) {
   return (
     <a
-      target="_blank"
       rel="noopener noreferrer"
       href={link}
       className={`${className}
@@ -23,5 +22,5 @@ export default function ButtonAlert({
         {label}
       </span>
     </a>
-  )
+  );
 }

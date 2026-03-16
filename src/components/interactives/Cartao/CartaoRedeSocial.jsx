@@ -248,8 +248,8 @@ function CartaoRedeSocial({ tipo = "contato", socio }) {
   // filtra apenas os que realmente têm valor
   const filteredData = Object.fromEntries(
     Object.entries(empresaLinks).filter(
-      ([_, value]) => value && value.trim() !== ""
-    )
+      ([_, value]) => value && value.trim() !== "",
+    ),
   );
 
   const labels = {
@@ -272,13 +272,13 @@ function CartaoRedeSocial({ tipo = "contato", socio }) {
     tipo === "contato"
       ? contatoLinks
       : tipo === "social"
-      ? redesLinks
-      : tipo === "empresa"
-      ? filteredData
-      : contatoLinks;
+        ? redesLinks
+        : tipo === "empresa"
+          ? filteredData
+          : contatoLinks;
 
   const linksToRender = Object.entries(links).filter(
-    ([_, value]) => value && value.trim() !== ""
+    ([_, value]) => value && value.trim() !== "",
   );
 
   function formatLabel(key, value) {
@@ -293,7 +293,7 @@ function CartaoRedeSocial({ tipo = "contato", socio }) {
         // Formata se tiver 11 dígitos (Brasil)
         if (digits.length === 11) {
           return `(${digits.slice(0, 2)}) ${digits.slice(2, 7)}-${digits.slice(
-            7
+            7,
           )}`;
         }
         return value;
@@ -368,7 +368,6 @@ function CartaoRedeSocial({ tipo = "contato", socio }) {
           <MotionDivDownToUp key={key}>
             <a
               href={link}
-              target="_blank"
               rel="noopener noreferrer"
               aria-label={`Link para ${labels[key] || key}`}
             >

@@ -163,7 +163,6 @@ function FooterSocialIcons({ withAnimation = true }) {
         const button = (
           <a
             href={link}
-            target="_blank"
             rel="noopener noreferrer"
             aria-label={`Link para o ${aria}`}
           >

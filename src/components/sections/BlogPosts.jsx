@@ -118,7 +118,6 @@ function BlogPosts({ colorMode }) {
             >
               <a
                 href={`https://${content.texts.blog.blogLink}`}
-                target="_blank"
                 rel="noopener noreferrer"
               >
                 {content.texts.blog.label}
