@@ -23,7 +23,7 @@ function Hero({ colorMode }) {
             alt="Cityscape"
             className="w-full h-full object-cover object-top"
           />
-          <div className="absolute inset-0 bg-black/80 mix-blend-multiply" />
+          <div className="absolute inset-0 bg-black/70 mix-blend-multiply" />
           {/* <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" /> */}
         </div>
 

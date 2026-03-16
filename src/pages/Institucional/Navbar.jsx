@@ -99,8 +99,10 @@ function Navbar() {
             <Link to="/">
               <img
                 onClick={() => {
-                  window.location.reload();
-                  window.scrollTo(0, 0);
+                  window.scrollTo({
+                    top: 0,
+                    behavior: "smooth",
+                  });
                 }}
                 src={content.texts.navbar.logo.img}
                 alt={content.texts.navbar.logo.alt}

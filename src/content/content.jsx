@@ -203,7 +203,7 @@ const content = {
               proporcionar maior celeridade e menor desgaste às partes.
               <br />
               <br />
-              <span className="font-bold">Divórcio</span>
+              <span className="font-bold">• Divórcio</span>
               <br />
               Atuação em processos de divórcio consensual ou litigioso, com
               orientação jurídica quanto às questões patrimoniais e familiares
@@ -212,7 +212,7 @@ const content = {
               alimentícia.
               <br />
               <br />
-              <span className="font-bold">Dissolução de União Estável</span>
+              <span className="font-bold">• Dissolução de União Estável</span>
               <br />
               Assessoria jurídica na formalização e dissolução de união estável,
               com análise dos efeitos patrimoniais da relação e orientação
@@ -220,7 +220,7 @@ const content = {
               demais questões decorrentes da separação.
               <br />
               <br />
-              <span className="font-bold">Pensão Alimentícia</span>
+              <span className="font-bold">• Pensão Alimentícia</span>
               <br />
               Atuação em demandas relacionadas à fixação, revisão ou exoneração
               de pensão alimentícia, sempre considerando os critérios legais de
@@ -229,7 +229,7 @@ const content = {
               <br />
               <br />
               <span className="font-bold">
-                Guarda de Filhos e Regulamentação de Convivência
+                • Guarda de Filhos e Regulamentação de Convivência
               </span>
               <br />
               Atuação na definição de modalidades de guarda e na regulamentação
@@ -237,7 +237,7 @@ const content = {
               interesse da criança ou do adolescente.
               <br />
               <br />
-              <span className="font-bold">Reconhecimento de Paternidade</span>
+              <span className="font-bold">• Reconhecimento de Paternidade</span>
               <br />
               Atuação em procedimentos de investigação ou reconhecimento de
               paternidade, bem como na regularização de registros civis e demais
@@ -245,7 +245,7 @@ const content = {
               filiação.
               <br />
               <br />
-              <span className="font-bold">Inventário</span>
+              <span className="font-bold">• Inventário</span>
               <br />
               Assessoria jurídica na condução de inventários judiciais ou
               extrajudiciais, com acompanhamento das etapas necessárias à
@@ -253,14 +253,14 @@ const content = {
               herdeiros.
               <br />
               <br />
-              <span className="font-bold">Partilha de Bens</span>
+              <span className="font-bold">• Partilha de Bens</span>
               <br />
               Atuação na divisão de patrimônio em decorrência de divórcio,
               dissolução de união estável ou sucessão, com análise das
               particularidades do regime de bens e da composição patrimonial.
               <br />
               <br />
-              <span className="font-bold">Planejamento Sucessório</span>
+              <span className="font-bold">• Planejamento Sucessório</span>
               <br />
               Orientação jurídica voltada à organização prévia da sucessão
               patrimonial, com o objetivo de proporcionar segurança jurídica,
@@ -310,7 +310,9 @@ const content = {
               disponíveis para a defesa de seus direitos.
               <br />
               <br />
-              <span className="font-bold">Revisão de Contratos Bancários</span>
+              <span className="font-bold">
+                • Revisão de Contratos Bancários
+              </span>
               <br />
               Análise jurídica de contratos firmados com instituições
               financeiras para identificar cláusulas abusivas, cobranças
@@ -318,21 +320,21 @@ const content = {
               condições contratuais.
               <br />
               <br />
-              <span className="font-bold">Cobranças Indevidas</span>
+              <span className="font-bold">• Cobranças Indevidas</span>
               <br />
               Atuação em casos que envolvem cobranças bancárias irregulares,
               tarifas indevidas ou valores cobrados de forma incorreta em
               contratos e operações financeiras.
               <br />
               <br />
-              <span className="font-bold">Juros Abusivos</span>
+              <span className="font-bold">• Juros Abusivos</span>
               <br />
               Análise de contratos de crédito e financiamentos para verificar a
               existência de taxas de juros excessivas ou encargos financeiros
               incompatíveis com os limites legais e jurisprudenciais.
               <br />
               <br />
-              <span className="font-bold">Empréstimos e Financiamentos</span>
+              <span className="font-bold">• Empréstimos e Financiamentos</span>
               <br />
               Assessoria jurídica em conflitos relacionados a contratos de
               empréstimos pessoais, financiamentos bancários e outras
@@ -340,7 +342,7 @@ const content = {
               <br />
               <br />
               <span className="font-bold">
-                Cartão de Crédito e Dívidas Bancárias
+                • Cartão de Crédito e Dívidas Bancárias
               </span>
               <br />
               Atuação em questões envolvendo cobranças relacionadas a cartões de
@@ -348,7 +350,7 @@ const content = {
               encargos aplicados pelas instituições financeiras.
               <br />
               <br />
-              <span className="font-bold">Crédito Consignado</span>
+              <span className="font-bold">• Crédito Consignado</span>
               <br />
               Assessoria em casos envolvendo contratos de crédito consignado,
               especialmente em situações de descontos indevidos, contratação
@@ -370,12 +372,19 @@ const content = {
       ),
       paragraph: (
         <>
-          Na Castro Advogados, cada caso é tratado com atenção, estratégia e
-          responsabilidade.
+          O escritório atua de forma focada no Direito de Família, lidando
+          diariamente com questões que envolvem relações familiares, separações
+          e reorganização da vida jurídica após o fim de um relacionamento. Essa
+          especialização permite conduzir cada caso com conhecimento técnico e
+          sensibilidade diante das particularidades que esse tipo de situação
+          exige.
           <br />
           <br />
-          Entendemos que por trás de toda demanda jurídica existe uma história,
-          uma preocupação e muitas vezes uma decisão importante a ser tomada.
+          <span className="font-bold">• Experiência em divórcios online</span>
+          <br />
+          Com experiência na condução de divórcios realizados de forma digital,
+          o processo pode ser iniciado e acompanhado sem necessidade de
+          deslocamentos ou burocracias desnecessárias. A estrutura digital
         </>
       ),
       img: imgApresentation,
@@ -413,8 +422,7 @@ const content = {
       paragraph: (
         <div>
           <span className="font-bold">
-            {" "}
-            Atuação especializada em Direito de Família
+            • Atuação especializada em Direito de Família
           </span>
           <br />
           O escritório atua de forma focada no Direito de Família, lidando
@@ -425,7 +433,7 @@ const content = {
           exige.
           <br />
           <br />
-          <span className="font-bold">Experiência em divórcios online</span>
+          <span className="font-bold">• Experiência em divórcios online</span>
           <br />
           Com experiência na condução de divórcios realizados de forma digital,
           o processo pode ser iniciado e acompanhado sem necessidade de
@@ -434,7 +442,7 @@ const content = {
           e praticidade para as partes envolvidas.
           <br />
           <br />
-          <span className="font-bold">Atendimento ágil e personalizado</span>
+          <span className="font-bold">• Atendimento ágil e personalizado</span>
           <br />
           Cada caso é analisado de forma individual, respeitando as necessidades
           e circunstâncias de cada cliente. O atendimento é conduzido com
@@ -442,7 +450,7 @@ const content = {
           rápidas ao longo de todo o processo.
           <br />
           <br />
-          <span className="font-bold">Transparência em todas as etapas</span>
+          <span className="font-bold">• Transparência em todas as etapas</span>
           <br />A condução do processo ocorre com total transparência, mantendo
           o cliente informado sobre cada etapa, prazos e procedimentos
           envolvidos. Essa clareza permite que todas as decisões sejam tomadas

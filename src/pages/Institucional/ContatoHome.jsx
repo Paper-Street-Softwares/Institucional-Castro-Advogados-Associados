@@ -5,6 +5,7 @@ import content from "../../content/content";
 import { ArrowRight, Phone } from "lucide-react";
 import MotionDivDownToUp from "../../components/animation/MotionDivDownToUp";
 import { Check } from "lucide-react";
+import SectionHeaderNovo from "../../components/sectionElements/SectionHeaderNovo";
 
 function ContatoHome({ colorMode }) {
   // Classes dinâmicas conforme colorMode
@@ -45,23 +46,24 @@ function ContatoHome({ colorMode }) {
     <SectionArea className={`relative z-0 ${backgroundMode}`}>
       {/* Fundo decorativo */}
       <SectionWrapper className="">
-        <section className="relative text-center flex flex-col desktop1:flex-row gap-4 items-center">
+        <section className="relative text-center flex flex-col desktop1:flex-row gap-4 justify-between items-center">
           <MotionDivDownToUp className="desktop1:text-left desktop1:max-w-[50%]">
-            <span
-              className={`font-bold font-secondFont tracking-wider uppercase text-xs mb-2 block ${miniTagCtaDark}`}
-            >
-              {content.texts.contato.minitag}
-            </span>
-            <h2
-              className={`text-4xl md:text-[48px] leading-[48px] font-mainFont font-bold mb-6 ${text}`}
-            >
-              {content.texts.contato.title}
-            </h2>
-            <p
-              className={`text-lg font-secondFont font-light md:text-xl max-w-2xl mx-auto mb-4 ${textOpacity}`}
-            >
-              {content.texts.contato.subtitle}
-            </p>
+            <SectionHeaderNovo
+              colorMode={colorMode}
+              miniTitle={content.texts.contato.minitag}
+              title={content.texts.contato.title}
+              subtitle={content.texts.contato.subtitle}
+              className={`desktop1:hidden mb-4`}
+            />
+
+            <SectionHeaderNovo
+              colorMode={colorMode}
+              miniTitle={content.texts.contato.minitag}
+              title={content.texts.contato.title}
+              subtitle={content.texts.contato.subtitle}
+              type="article"
+              className={`hidden desktop1:flex desktop1:flex-col`}
+            />
 
             <div className="flex flex-col w-fit justify-center items-center mx-auto desktop1:mx-0">
               <a
@@ -79,7 +81,7 @@ function ContatoHome({ colorMode }) {
           </MotionDivDownToUp>
 
           <MotionDivDownToUp
-            className={`max-w-[1215px] desktop1:max-w-[50%] w-full`}
+            className={`max-w-[1215px] desktop1:max-w-[500px] w-full`}
           >
             <div className="mt-8 w-full">
               <iframe

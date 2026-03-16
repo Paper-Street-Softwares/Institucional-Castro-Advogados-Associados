@@ -21,6 +21,7 @@ export default function TeamMember({
   role,
   rota,
   modal = "true",
+  buttonRota,
 }) {
   return (
     <div className="flex flex-col items-center text-center font-secondFont mx-auto p-4 h-full bg-primaryDark/5 rounded-md max-w-[400px]">
@@ -89,17 +90,19 @@ export default function TeamMember({
       <p className="font-secondFont line-clamp-3 mt-4 text-corOutrosTextosPreto opacity-90">
         {description}
       </p>
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href={rota}
-        className="text-primaryLight text-sm hover:scale-90 transition-all duration-500 cursor-pointer mt-6 flex w-fit gap-2 items-center"
-      >
-        Saiba mais
-        <span>
-          <ArrowRight width={18} />
-        </span>
-      </a>
+      {buttonRota && (
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href={rota}
+          className="text-primaryLight text-sm hover:scale-90 transition-all duration-500 cursor-pointer mt-6 flex w-fit gap-2 items-center"
+        >
+          Saiba mais
+          <span>
+            <ArrowRight width={18} />
+          </span>
+        </a>
+      )}
     </div>
   );
 }

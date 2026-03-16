@@ -44,7 +44,7 @@ function About({ colorMode }) {
               <a
                 target="_blank"
                 rel="noopener noreferrer"
-                onClick={() => navigate("/about")}
+                href="/about"
                 className="text-primaryLight text-sm hover:scale-90 transition-all duration-500 cursor-pointer mt-6 flex w-fit gap-2 items-center"
               >
                 <span>
